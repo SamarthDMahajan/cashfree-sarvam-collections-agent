@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashfree × Sarvam | AI Collections Command Center</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo-group">
+            <div class="badge-tag">BUILDATHON 2026 • PS-2</div>
+            <h1>Cashfree <span class="accent-cf">×</span> Sarvam <span class="accent-ai">AI</span></h1>
+            <span class="subtitle">Autonomous Multilingual Fair Collections Engine</span>
+        </div>
+        <div class="header-right">
+            <div class="compliance-badge" id="rbiHeaderBadge">
+                <span class="pulse-dot green"></span>
+                <span>RBI JAN 2027 COMPLIANCE GATE: <strong id="callingStatusText">8 AM - 7 PM WINDOW ACTIVE</strong></span>
+            </div>
+            <div class="header-clock" id="istClock">IST 00:00:00</div>
+        </div>
+    </header>
+
+    <!-- Top KPI Bar -->
+    <section class="kpi-banner">
+        <div class="kpi-card">
+            <div class="kpi-label">TOTAL BOOK VALUE</div>
+            <div class="kpi-value" id="kpiBookValue">₹0</div>
+            <div class="kpi-sub" id="kpiTotalBorrowers">0 Borrowers</div>
+        </div>
+        <div class="kpi-card highlight">
+            <div class="kpi-label">TOP 360 TARGET RECOVERY</div>
+            <div class="kpi-value" id="kpiTargetValue">₹0</div>
+            <div class="kpi-sub">Priority Cohort Today</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">PAID / RESOLVED</div>
+            <div class="kpi-value text-green" id="kpiPaidCount">0</div>
+            <div class="kpi-sub">Real-Time Cashfree Sync</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">COMPASSIONATE / RECON HOLDS</div>
+            <div class="kpi-value text-amber" id="kpiHoldCount">0</div>
+            <div class="kpi-sub">RBI Fair Practice Protected</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">EPSILON-GREEDY EXPLORATION</div>
+            <div class="kpi-value text-purple" id="kpiExploreCount">36</div>
+            <div class="kpi-sub">10% Budget (Bias Free)</div>
+        </div>
+    </section>
+
+    <!-- Event Diff Banner -->
+    <div class="diff-banner hidden" id="diffBanner">
+        <span class="diff-icon">⚡</span>
+        <span class="diff-text" id="diffBannerText">Queue re-formed based on live event.</span>
+        <button class="btn-sm btn-dismiss" onclick="dismissBanner()">Dismiss</button>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+        <button class="tab-btn active" onclick="switchTab('queueTab')">1. Live Prioritized Queue (Top 360)</button>
+        <button class="tab-btn" onclick="switchTab('controlsTab')">2. Live Event & Queue Re-Forming</button>
+        <button class="tab-btn" onclick="switchTab('curveballTab')">3. Demo-Day Curveball & Mathematical Proof</button>
+        <button class="tab-btn" onclick="switchTab('auditTab')">4. RBI Jan 2027 Audit & Compliance Log</button>
+    </nav>
+
+    <!-- TAB 1: Live Prioritized Queue -->
+    <main class="tab-content active" id="queueTab">
+        <div class="panel-header">
+            <div>
+                <h2>Optimal Recovery Queue — Top 360 Call Slots</h2>
+                <p class="section-desc">Algorithmically prioritized strictly on repayment probability signals. Protected attributes (gender, religion, caste, pincode, language) are 100% hard-excluded.</p>
+            </div>
+            <div class="queue-actions">
+                <input type="text" id="queueSearchInput" placeholder="Search Loan ID, Name, Note..." onkeyup="filterQueueTable()">
+                <button class="btn-primary" onclick="loadQueue()"><span class="refresh-icon">🔄</span> Refresh Queue</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table" id="queueTable">
+                <thead>
+                    <tr>
+                        <th width="70">Rank</th>
+                        <th width="70">Delta</th>
+                        <th width="80">Score</th>
+                        <th width="120">Loan ID</th>
+                        <th width="150">Borrower</th>
+                        <th width="60">Lang</th>
+                        <th width="60">DPD</th>
+                        <th width="110">Due (₹)</th>
+                        <th>Manager Read-Aloud Reason</th>
+                        <th width="120">RBI Gate</th>
+                        <th width="240">Agent Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="queueTableBody">
+                    <tr><td colspan="11" class="text-center py-4">Loading prioritized queue...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- TAB 2: Live Event & Queue Re-Forming -->
+    <main class="tab-content" id="controlsTab">
+        <div class="panel-header">
+            <div>
+                <h2>Live Event Simulation & Dynamic Queue Re-Forming</h2>
+                <p class="section-desc">Interact with Cashfree Sandbox and Sarvam AI in real time. Watch how every payment, lapse, audio upload, or compliance trigger re-ranks the borrower queue with visible rank deltas (↑ / ↓).</p>
+            </div>
+        </div>
+
+        <div class="controls-grid">
+            <!-- Card 1: Cashfree Live Link & Sync -->
+            <div class="control-card">
+                <div class="card-title">
+                    <span class="card-badge cf">Cashfree Sandbox</span>
+                    <h3>Live Payment Link & Sync</h3>
+                </div>
+                <p>Generate authentic Cashfree Sandbox payment links (Full or Hardship Partial) and pull live payment settlement status.</p>
+                <div class="form-group">
+                    <label>Selected Target Loan ID:</label>
+                    <input type="text" id="ctrlLoanId" placeholder="e.g. LN-20261211" value="LN-20261211">
+                </div>
+                <div class="btn-group">
+                    <button class="btn-cf" onclick="triggerCreateLink(false)">Generate Full Link</button>
+                    <button class="btn-cf-outline" onclick="triggerCreateLink(true)">Hardship Partial Link (20%)</button>
+                </div>
+                <div class="link-output-box hidden" id="linkResultBox">
+                    <div class="link-id-label">Link ID: <span id="resLinkId">-</span></div>
+                    <a href="#" target="_blank" id="resLinkUrl" class="live-url">https://payments-test.cashfree.com/...</a>
+                    <button class="btn-sm btn-sync" onclick="syncCurrentLink()">Sync Live Sandbox Status</button>
+                    <div id="syncStatusResult" class="sync-msg"></div>
+                </div>
+            </div>
+
+            <!-- Card 2: Borrower Voice / Speech-to-Text -->
+            <div class="control-card">
+                <div class="card-title">
+                    <span class="card-badge sarvam">Sarvam AI Saaras</span>
+                    <h3>Borrower Audio & Code-Mixed STT</h3>
+                </div>
+                <p>Upload or record inbound borrower audio (Hinglish/Kannada/Tamil). Saaras v4 transcribes the intent and re-ranks the queue!</p>
+                <div class="sample-audio-selector">
+                    <label>Select Sample Code-Mixed Audio Statement:</label>
+                    <select id="sampleAudioSelect" onchange="applySampleAudioStatement()">
+                        <option value="salary 5th ko aayega tab pakka pay kar dunga">Hinglish: "salary 5th ko aayega tab pakka pay kar dunga" (Salary Promise)</option>
+                        <option value="branch mein de diya cash receipt hai mere paas">Hinglish: "branch mein de diya cash receipt hai" (Reconciliation Hold)</option>
+                        <option value="hospital me admit hu accident ho gaya tha">Hinglish: "hospital me admit hu accident ho gaya" (Medical Hold)</option>
+                        <option value="sambala 5th baratte aaga full pay madtini">Kannada: "sambala 5th baratte aaga full pay madtini"</option>
+                        <option value="salary 5th varum sir appo kandippa pay panren">Tamil: "salary 5th varum sir appo kandippa pay panren"</option>
+                        <option value="abhi paise nahi hai aadha abhi de sakta hu baki baadme">Hinglish: "abhi paise nahi hai aadha de sakta hu" (Hardship Partial)</option>
+                    </select>
+                </div>
+                <div class="form-group mt-2">
+                    <textarea id="liveAudioTranscript" rows="2" placeholder="Recognized speech transcript will appear here..."></textarea>
+                </div>
+                <div class="btn-group">
+                    <button class="btn-sarvam" onclick="processAudioStatement()">Process Intent & Re-Rank</button>
+                </div>
+            </div>
+
+            <!-- Card 3: Behavioral Events (Lapse & Reconciliation) -->
+            <div class="control-card">
+                <div class="card-title">
+                    <span class="card-badge">Behavioral Triggers</span>
+                    <h3>Simulate Promise Lapse & Recon Hold</h3>
+                </div>
+                <p>Test edge cases where borrowers fail payment commitments or claim prior counter payments.</p>
+                <div class="btn-group-vertical">
+                    <button class="btn-danger-outline" onclick="triggerSimulateLapse()">
+                        <strong>Simulate Promise Lapse</strong>
+                        <span class="btn-sub">Increases broken promises penalty, lowers borrower score</span>
+                    </button>
+                    <button class="btn-warning-outline" onclick="triggerSimulateRecon()">
+                        <strong>Trigger "Branch Mein De Diya" Recon Hold</strong>
+                        <span class="btn-sub">Halts dialer calls instantly under RBI Fair Practices Code</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4: RBI Jan 2027 7:15 PM Compliance Toggle -->
+            <div class="control-card">
+                <div class="card-title">
+                    <span class="card-badge rbi">RBI Jan 2027</span>
+                    <h3>7:15 PM Calling Window Toggle</h3>
+                </div>
+                <p>RBI Jan 2027 rules strictly prohibit outbound calls outside 08:00 AM – 07:00 PM IST unless the borrower gave explicit documented opt-in.</p>
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="eveningToggle" onchange="toggleEveningWindow(this.checked)">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="toggle-label">
+                        <strong id="toggleStateLabel">Standard Business Hours (Permitted)</strong>
+                        <span class="toggle-sub">Toggle ON to simulate 7:15 PM IST (Hard-blocks non-opted-in accounts)</span>
+                    </div>
+                </div>
+                <div class="alert-box" id="eveningAlertBox">
+                    <span id="eveningAlertMsg">Currently running within permissible 8am-7pm IST hours.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- TAB 3: Demo-Day Curveball & Mathematical Proof -->
+    <main class="tab-content" id="curveballTab">
+        <div class="panel-header">
+            <div>
+                <h2>Demo-Day Curveball Evaluation & Mathematical Proof</h2>
+                <p class="section-desc">Drop ANY unseen borrower CSV file here to clean and rank in under 3 seconds. Demonstrates measured Recovery Lift @ Top 360 vs. standard loan-number order, plus rigorous mathematical proof of zero proxy leakage.</p>
+            </div>
+            <button class="btn-primary" onclick="runCurveballEvaluation()">Run Curveball Evaluation (Held-Out Test Set)</button>
+        </div>
+
+        <div class="drop-zone" id="csvDropZone">
+            <span class="drop-icon">📁</span>
+            <div class="drop-title">Drag & Drop Unseen Borrower CSV Here</div>
+            <div class="drop-sub">or click to browse from computer (cleans & ranks in &lt;3s)</div>
+            <input type="file" id="curveballFileInput" accept=".csv" class="hidden-input" onchange="handleCurveballUpload(this.files)">
+        </div>
+
+        <div class="proof-results-section hidden" id="curveballResults">
+            <div class="proof-cards-grid">
+                <div class="proof-card">
+                    <div class="proof-label">PAYER CAPTURE LIFT @ TOP 360</div>
+                    <div class="proof-val text-green" id="liftCaptureRate">+0%</div>
+                    <div class="proof-detail" id="liftCaptureDetail">Ranked: 0 vs Default: 0</div>
+                </div>
+                <div class="proof-card highlight">
+                    <div class="proof-label">RECOVERED AMOUNT LIFT (₹)</div>
+                    <div class="proof-val text-blue" id="liftRecoveryAmount">+0%</div>
+                    <div class="proof-detail" id="liftRecoveryDetail">Ranked: ₹0 vs Default: ₹0</div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-label">GENDER DISPARATE IMPACT (DIR)</div>
+                    <div class="proof-val text-purple" id="dirGenderVal">1.00</div>
+                    <div class="proof-detail">Compliant (>= 0.80): <strong class="text-green">PASS</strong></div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-label">LANGUAGE DISPARATE IMPACT (DIR)</div>
+                    <div class="proof-val text-purple" id="dirLangVal">1.00</div>
+                    <div class="proof-detail">Compliant (>= 0.80): <strong class="text-green">PASS</strong></div>
+                </div>
+            </div>
+
+            <!-- Mathematical Proof & Proxy Table -->
+            <div class="audit-table-card mt-4">
+                <div class="card-title">
+                    <h3>Mathematical Fairness & Proxy-Free Verification Matrix</h3>
+                </div>
+                <p class="section-desc">Proof of zero proxy correlation between scoring features and protected attributes (Gender, Religion, Caste, Pincode, Language).</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Protected Attribute</th>
+                            <th>Status in Algorithm</th>
+                            <th>Pearson Correlation (r)</th>
+                            <th>Disparate Impact Ratio (DIR)</th>
+                            <th>4/5ths Rule Verification</th>
+                        </tr>
+                    </thead>
+                    <tbody id="proxyAuditBody">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- TAB 4: RBI Jan 2027 Audit & Compliance Log -->
+    <main class="tab-content" id="auditTab">
+        <div class="panel-header">
+            <div>
+                <h2>RBI Jan 2027 Regulatory Audit & Compliance Trail</h2>
+                <p class="section-desc">Searchable 6-month tamper-evident call record log, mandatory recording disclosures, Principal Grievance Redressal Officer (GRO) contact footers, and compassionate holds.</p>
+            </div>
+            <div class="queue-actions">
+                <input type="text" id="auditSearchInput" placeholder="Filter by Loan ID..." onkeyup="filterAuditLogs()">
+                <button class="btn-primary" onclick="loadAuditLogs()">Refresh Audit Trail</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table" id="auditTable">
+                <thead>
+                    <tr>
+                        <th>Log ID</th>
+                        <th>Timestamp (IST)</th>
+                        <th>Loan ID</th>
+                        <th>Masked Phone</th>
+                        <th>Language</th>
+                        <th>Compliance Status</th>
+                        <th>Call Disclosure Played</th>
+                        <th>GRO Footer Included</th>
+                        <th>Agent ID</th>
+                    </tr>
+                </thead>
+                <tbody id="auditTableBody">
+                    <tr><td colspan="9" class="text-center py-4">Loading audit logs...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Modal: Speak in Borrower's Language -->
+    <div class="modal-backdrop hidden" id="voiceModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="modal-tag">SARVAM AI • BULBUL TTS & REGIONAL DIALECTS</div>
+                <h3 id="modalBorrowerTitle">Outreach to Borrower</h3>
+                <button class="btn-close" onclick="closeVoiceModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="disclosure-box">
+                    <span class="disc-label">Mandatory RBI Call Recording Disclosure:</span>
+                    <p id="modalDisclosureText">Notice: This call is recorded for quality, service assurance, and regulatory compliance under the RBI Fair Practices Code.</p>
+                </div>
+
+                <div class="script-box">
+                    <span class="disc-label">Polite Outreach Script (<span id="modalLangBadge">hi-IN</span>):</span>
+                    <p id="modalScriptBody" class="script-vernacular">नमस्ते...</p>
+                    <div class="translation-box">
+                        <span class="trans-label">English Translation:</span>
+                        <p id="modalScriptTranslation">Hello...</p>
+                    </div>
+                </div>
+
+                <div class="gro-box">
+                    <span class="disc-label">Statutory Principal Grievance Redressal Officer (GRO) Footer:</span>
+                    <p id="modalGroText">GRO: Alok Verma (gro@sarvam-cashfree-bank.in | 1800-258-4455). Escalate to RBI CMS at cms.rbi.org.in or dial 14448.</p>
+                </div>
+
+                <div class="audio-player-box">
+                    <audio id="bulbulAudioPlayer" controls class="full-audio"></audio>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-sarvam" id="modalPlayBtn" onclick="playBulbulVoice()"><span class="play-icon">▶</span> Speak via Sarvam Bulbul</button>
+                <button class="btn-secondary" onclick="closeVoiceModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Send Cashfree Link -->
+    <div class="modal-backdrop hidden" id="paylinkModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="modal-tag">CASHFREE SANDBOX • LIVE PAYMENT LINK</div>
+                <h3 id="modalPaylinkTitle">Dispatch Cashfree Payment Link</h3>
+                <button class="btn-close" onclick="closePaylinkModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <p>Choose settlement structure for Loan <strong id="modalPayLoanId">-</strong>:</p>
+                <div class="pay-options">
+                    <label class="pay-radio">
+                        <input type="radio" name="payTypeRadio" value="full" checked onchange="togglePartialAmountInput(false)">
+                        <div>
+                            <strong>Full Settlement Link (100% Principal + EMI)</strong>
+                            <div class="radio-sub">Total Due: ₹<span id="modalFullAmt">0</span></div>
+                        </div>
+                    </label>
+                    <label class="pay-radio">
+                        <input type="radio" name="payTypeRadio" value="partial" onchange="togglePartialAmountInput(true)">
+                        <div>
+                            <strong>Hardship Partial Settlement (link_partial_payments: true)</strong>
+                            <div class="radio-sub">Enables borrower to pay minimum installment today with custom amount.</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-group hidden mt-2" id="partialAmtGroup">
+                    <label>Minimum Acceptable Partial Payment (₹):</label>
+                    <input type="number" id="modalMinPartialAmt" value="1000">
+                </div>
+                <div class="modal-link-result hidden mt-3" id="modalLinkResult">
+                    <div class="link-success-badge">✅ Link Created Successfully</div>
+                    <div class="link-id-label">Link ID: <span id="modalResLinkId">-</span></div>
+                    <a href="#" target="_blank" id="modalResLinkUrl" class="live-url">https://payments-test.cashfree.com/...</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cf" id="modalCreateLinkBtn" onclick="executeCreatePaylink()">Create Cashfree Link</button>
+                <button class="btn-secondary" onclick="closePaylinkModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
