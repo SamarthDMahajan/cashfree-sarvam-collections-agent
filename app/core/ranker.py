@@ -155,3 +155,4 @@ def rank_borrowers(
         current_rank += 1
 
     return final_top
+

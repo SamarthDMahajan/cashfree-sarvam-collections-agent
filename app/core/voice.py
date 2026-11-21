@@ -132,3 +132,4 @@ def transcribe_audio(
             "error": str(e),
             "transcript": ""
         }
+

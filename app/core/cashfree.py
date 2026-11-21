@@ -101,7 +101,9 @@ class CashfreeClient:
                         "error": f"Cashfree HTTP {res.status_code}: {res.text}",
                         "link_id": link_id,
                         "link_url": f"https://payments-test.cashfree.com/links/{link_id}",
-                        "link_status": "MOCK_ACTIVE"
+                        "link_status": "MOCK_ACTIVE",
+                        "is_partial": is_partial,
+                        "min_partial_amount": payload.get("link_minimum_partial_amount")
                     }
         except Exception as e:
             return {
@@ -109,7 +111,9 @@ class CashfreeClient:
                 "error": str(e),
                 "link_id": link_id,
                 "link_url": f"https://payments-test.cashfree.com/links/{link_id}",
-                "link_status": "MOCK_ACTIVE"
+                "link_status": "MOCK_ACTIVE",
+                "is_partial": is_partial,
+                "min_partial_amount": payload.get("link_minimum_partial_amount")
             }
 
     def get_payment_link_status(self, link_id: str) -> Dict[str, Any]:
@@ -157,3 +161,4 @@ class CashfreeClient:
         }
 
 cashfree_client = CashfreeClient()
+

@@ -72,6 +72,42 @@ class ComplianceAuditLog:
             entries = [e for e in entries if filter_loan.lower() in e["loan_id"].lower()]
         return list(reversed(entries[-limit:]))
 
+    def seed_initial_holds(self, borrowers: List[Dict[str, Any]]) -> int:
+        """Pre-seeds regulatory hold events for medical/ICU and branch recon records."""
+        count = 0
+        for b in borrowers:
+            notes = str(b.get("notes") or "")
+            comp_hold = check_compassionate_hold(notes)
+            recon_hold = check_reconciliation_hold(notes)
+            
+            if comp_hold["is_hold"]:
+                self.record_call_event(
+                    loan_id=str(b.get("loan_id")),
+                    phone=str(b.get("phone", "")),
+                    language=str(b.get("preferred_language", "hi-IN")),
+                    channel="REGULATORY_HOLD_GATE",
+                    status="COMPASSIONATE_HOLD_LOGGED",
+                    compliance_check={"allowed": False, "reason": comp_hold["reason"], "gro_footer": True},
+                    disclosure_text="Automatic statutory cooling-off moratorium applied per RBI Jan 2027 directions.",
+                    metadata={"hold_type": comp_hold["category"], "hold_days": comp_hold["hold_days"]}
+                )
+                count += 1
+            elif recon_hold["is_hold"]:
+                self.record_call_event(
+                    loan_id=str(b.get("loan_id")),
+                    phone=str(b.get("phone", "")),
+                    language=str(b.get("preferred_language", "hi-IN")),
+                    channel="REGULATORY_HOLD_GATE",
+                    status="RECONCILIATION_HOLD_LOGGED",
+                    compliance_check={"allowed": False, "reason": recon_hold["reason"], "gro_footer": True},
+                    disclosure_text="Automatic branch reconciliation hold applied. Outbound recovery suspended.",
+                    metadata={"hold_type": recon_hold["category"], "hold_days": recon_hold["hold_days"]}
+                )
+                count += 1
+            if count >= 20:
+                break
+        return count
+
 audit_logger = ComplianceAuditLog()
 
 def check_calling_hours(check_time: Optional[datetime] = None, borrower_opted_in: bool = False) -> Dict[str, Any]:
@@ -247,3 +283,4 @@ def evaluate_borrower_call_compliance(
         "gro_footer": get_gro_footer(),
         "disclosure": get_mandatory_recording_disclosure(lang)
     }
+

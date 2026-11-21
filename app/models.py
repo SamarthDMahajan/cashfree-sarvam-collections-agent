@@ -75,3 +75,4 @@ class FairnessReport(BaseModel):
     excluded_proxy_features: List[str]
     allowed_scoring_features: List[str]
     pass_all_fairness_checks: bool
+

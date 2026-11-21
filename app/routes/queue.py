@@ -8,7 +8,7 @@ from typing import Optional
 from fastapi import APIRouter, Query
 
 from app.config import IST
-from app.core.queue_engine import queue_engine
+from app.core.queue_engine import queue_engine, sanitize_record
 from app.core.compliance import audit_logger, evaluate_borrower_call_compliance
 
 router = APIRouter(prefix="/api", tags=["Queue"])
@@ -27,15 +27,19 @@ def get_queue(limit: int = 360):
         comp = evaluate_borrower_call_compliance(item, check_time=test_dt)
         entry = dict(item)
         entry["rbi_compliance"] = comp
-        augmented.append(entry)
+        augmented.append(sanitize_record(entry))
 
     hold_lanes = queue_engine.get_hold_lanes()
+    # Sanitize hold lane entries
+    sanitized_lanes = {
+        k: [sanitize_record(x) for x in v] for k, v in hold_lanes.items()
+    }
     stats = queue_engine.get_summary_metrics()
 
     return {
         "queue": augmented,
         "count": len(augmented),
-        "hold_lanes": hold_lanes,
+        "hold_lanes": sanitized_lanes,
         "stats": stats,
         "is_evening_override_active": bool(CURRENT_FAKE_TIME)
     }
@@ -44,3 +48,4 @@ def get_queue(limit: int = 360):
 def get_audit_logs(limit: int = 100, filter_loan: Optional[str] = None):
     """Returns searchable 6-month call and regulatory compliance logs."""
     return {"logs": audit_logger.get_logs(limit=limit, filter_loan=filter_loan)}
+

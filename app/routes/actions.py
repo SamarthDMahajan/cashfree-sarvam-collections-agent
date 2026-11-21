@@ -86,3 +86,4 @@ def test_time_block(payload: TimeBlockPayload):
         "is_override_active": bool(queue_routes.CURRENT_FAKE_TIME),
         "message": msg
     }
+

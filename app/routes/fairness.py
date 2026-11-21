@@ -19,3 +19,4 @@ def get_fairness_report():
         return {"status": "NO_DATA", "pass_all_fairness_checks": True}
     report = audit_fairness_and_proxies(df, top_n=360)
     return report
+

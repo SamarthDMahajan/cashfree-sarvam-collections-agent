@@ -5,8 +5,25 @@ Manages:
 2. Computation of rank deltas (↑ / ↓) against snapshots.
 3. Separation of active queue (Top 360) vs Hold Lanes (Compassionate / Recon).
 """
+import math
 from typing import List, Dict, Any, Optional
 from app.core.ranker import rank_borrowers
+
+def sanitize_record(b: Dict[str, Any]) -> Dict[str, Any]:
+    """Sanitizes any NaN, Infinity, or None to strict standard JSON compliance."""
+    clean = {}
+    for k, v in b.items():
+        if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+            clean[k] = 0.0
+        elif v is None:
+            clean[k] = "" if k == "notes" else 0
+        elif isinstance(v, dict):
+            clean[k] = sanitize_record(v)
+        else:
+            clean[k] = v
+    if "notes" not in clean or clean["notes"] is None:
+        clean["notes"] = ""
+    return clean
 
 class QueueEngine:
     def __init__(self):
@@ -16,7 +33,7 @@ class QueueEngine:
         self.last_event: Optional[Dict[str, Any]] = None
 
     def load_borrowers(self, borrower_list: List[Dict[str, Any]]) -> None:
-        self.borrowers = {str(b["loan_id"]): dict(b) for b in borrower_list}
+        self.borrowers = {str(b["loan_id"]): sanitize_record(dict(b)) for b in borrower_list}
         self.re_rank(event_description="Initial queue load")
 
     def re_rank(self, event_description: str = "") -> List[Dict[str, Any]]:
@@ -24,23 +41,25 @@ class QueueEngine:
         new_ranked = rank_borrowers(borrower_data, top_slots=360)
 
         new_ranks: Dict[str, int] = {}
+        cleaned_ranked = []
         for item in new_ranked:
+            item = sanitize_record(item)
             lid = str(item["loan_id"])
             current_rank = item["rank"]
             new_ranks[lid] = current_rank
             
             # Rank Delta: Previous Rank - Current Rank
-            # (e.g. Previous 15, Now 10 -> +5 = Moved UP)
             if lid in self.previous_ranks:
                 item["rank_delta"] = self.previous_ranks[lid] - current_rank
             else:
                 item["rank_delta"] = 0
+            cleaned_ranked.append(item)
 
         self.previous_ranks = new_ranks
-        self.ranked_queue = new_ranked
+        self.ranked_queue = cleaned_ranked
         self.last_event = {
             "description": event_description,
-            "timestamp": new_ranked[0].get("timestamp_ist", "") if new_ranked else ""
+            "timestamp": cleaned_ranked[0].get("timestamp_ist", "") if cleaned_ranked else ""
         }
         return self.ranked_queue
 
@@ -137,3 +156,4 @@ class QueueEngine:
         }
 
 queue_engine = QueueEngine()
+

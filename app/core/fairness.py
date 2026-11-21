@@ -34,7 +34,10 @@ def audit_fairness_and_proxies(
         male_rate = (males & is_top_n).sum() / max(1, males.sum())
         female_rate = (females & is_top_n).sum() / max(1, females.sum())
         
-        dir_gender = female_rate / max(0.0001, male_rate)
+        # Strict normalization: min_rate / max_rate ensures DIR is always in [0.00, 1.00]
+        min_g_rate = min(female_rate, male_rate)
+        max_g_rate = max(female_rate, male_rate)
+        dir_gender = min_g_rate / max(0.0001, max_g_rate)
         audit_results["disparate_impact"]["gender"] = {
             "female_selection_rate": round(float(female_rate), 4),
             "male_selection_rate": round(float(male_rate), 4),
@@ -52,7 +55,10 @@ def audit_fairness_and_proxies(
         en_rate = (english & is_top_n).sum() / max(1, english.sum())
         reg_rate = (regional & is_top_n).sum() / max(1, regional.sum())
         
-        dir_lang = reg_rate / max(0.0001, en_rate)
+        # Strict normalization: min_rate / max_rate ensures DIR is always in [0.00, 1.00]
+        min_l_rate = min(reg_rate, en_rate)
+        max_l_rate = max(reg_rate, en_rate)
+        dir_lang = min_l_rate / max(0.0001, max_l_rate)
         audit_results["disparate_impact"]["language"] = {
             "regional_selection_rate": round(float(reg_rate), 4),
             "english_selection_rate": round(float(en_rate), 4),
@@ -89,3 +95,4 @@ def audit_fairness_and_proxies(
     audit_results["excluded_proxy_features"] = EXCLUDED_PROXY_FEATURES
     audit_results["allowed_scoring_features"] = ALLOWED_SCORING_FEATURES
     return audit_results
+

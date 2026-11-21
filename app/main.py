@@ -47,9 +47,22 @@ def startup_event():
 
     df = pd.read_csv(book_csv)
     df_clean = df.drop_duplicates(subset=["loan_id"]).copy()
+    
+    # Rigorous null and NaN sanitization
+    for col in df_clean.columns:
+        if df_clean[col].dtype == object or df_clean[col].dtype == 'string':
+            df_clean[col] = df_clean[col].fillna("")
+        else:
+            df_clean[col] = df_clean[col].fillna(0)
+
     records = df_clean.to_dict(orient="records")
     queue_engine.load_borrowers(records)
     print(f"[STARTUP] Successfully loaded & deduplicated {len(records)} borrowers into queue engine.")
+
+    # Pre-seed initial compliance events (medical/ICU & branch recon holds) into audit trail
+    from app.core.compliance import audit_logger
+    seeded_count = audit_logger.seed_initial_holds(records)
+    print(f"[STARTUP] Pre-seeded {seeded_count} regulatory hold events into audit trail.")
 
 # Register API Routers
 app.include_router(queue_router)
