@@ -9,11 +9,9 @@ Asserts PASS on ALL buildathon redlines:
 """
 import os
 import sys
-import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import pandas as pd
-import httpx
 from dotenv import load_dotenv
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -21,23 +19,24 @@ load_dotenv(override=True)
 
 from app.config import (
     ALLOWED_SCORING_FEATURES,
-    PROTECTED_ATTRIBUTES,
+    EXCLUDED_PROXY_FEATURES,
     CASHFREE_CLIENT_ID,
     CASHFREE_CLIENT_SECRET,
     CASHFREE_BASE_URL,
     CASHFREE_API_VERSION,
     LAMBDA_WEBHOOK_URL
 )
-from app.fair_ranker import rank_borrowers, audit_fairness_and_proxies
-from app.compliance import (
+from app.core.ranker import rank_borrowers
+from app.core.fairness import audit_fairness_and_proxies
+from app.core.compliance import (
     check_calling_hours,
     check_compassionate_hold,
     check_reconciliation_hold,
     evaluate_borrower_call_compliance
 )
-from app.queue_engine import QueueEngine
-from app.cashfree_client import cashfree_client
-from app.main import evaluate_curveball
+from app.core.queue_engine import QueueEngine
+from app.core.cashfree import cashfree_client
+from app.routes.curveball import upload_curveball
 
 IST = ZoneInfo("Asia/Kolkata")
 
@@ -50,15 +49,17 @@ def verify_all():
 
     # REDLINE 1: Zero Protected/Proxy Features in Ranking & DIR >= 0.80
     print("\n[REDLINE 1] Zero Protected/Proxy Features & Disparate Impact Ratio >= 0.80")
-    df = pd.read_csv("data/borrower_book_4200.csv").drop_duplicates(subset=["loan_id"])
+    book_path = "app/data/book.csv"
+    if not os.path.exists(book_path):
+        book_path = "data/borrower_book_4200.csv"
+    df = pd.read_csv(book_path).drop_duplicates(subset=["loan_id"])
     records = df.to_dict(orient="records")
     ranked = rank_borrowers(records, top_slots=360, epsilon=0.10)
     df_ranked = pd.DataFrame(ranked)
     audit = audit_fairness_and_proxies(df_ranked, top_n=360)
 
-    # Assert whitelist adherence
-    for col in audit["excluded_protected_columns"]:
-        assert col in PROTECTED_ATTRIBUTES, f"Protected attribute {col} must be explicitly guarded"
+    for col in audit["excluded_proxy_features"]:
+        assert col in EXCLUDED_PROXY_FEATURES, f"Protected attribute {col} must be explicitly guarded"
 
     dir_gender = audit["disparate_impact"]["gender"]["disparate_impact_ratio"]
     dir_lang = audit["disparate_impact"]["language"]["disparate_impact_ratio"]
@@ -98,7 +99,7 @@ def verify_all():
 
     # REDLINE 4: Measurable Recovery Lift @ Top 360 on Unseen Curveball CSV
     print("\n[REDLINE 4] Measurable Recovery Lift @ Top 360 vs Default Order (Unseen Curveball)")
-    cb_res = evaluate_curveball(file=None)
+    cb_res = upload_curveball(file=None)
     lift = cb_res["performance_lift"]
     capture_lift = lift["payer_capture_lift_percentage"]
     amount_lift = lift["recovery_lift_percentage"]
@@ -111,10 +112,9 @@ def verify_all():
     assert "+" in amount_lift and float(amount_lift.replace("+", "").replace("%", "")) > 5.0
     redline_results.append(("REDLINE 4: Positive Recovery Lift @ Top 360 on Curveball", "PASS"))
 
-    # REDLINE 5: Live Cashfree Sandbox Link Creation & Event-Driven Queue Re-forming
+    # REDLINE 5: Live Cashfree Sandbox Payment Link & Dynamic Queue Re-Forming
     print("\n[REDLINE 5] Live Cashfree Sandbox Payment Link & Dynamic Queue Re-Forming")
     test_loan_id = "LN-20261211"
-    # Create Full Link
     link_full = cashfree_client.create_payment_link(
         loan_id=test_loan_id,
         amount=12500.0,
@@ -125,7 +125,6 @@ def verify_all():
     print(f" -> Created Full Link: {link_full.get('link_id')} -> {link_full.get('link_url')} (Status: {link_full.get('link_status')})")
     assert link_full.get("link_status") in ["ACTIVE", "MOCK_ACTIVE"], "Link must be active"
 
-    # Create Hardship Partial Link
     link_partial = cashfree_client.create_payment_link(
         loan_id=test_loan_id,
         amount=12500.0,
@@ -137,20 +136,18 @@ def verify_all():
     print(f" -> Created Partial Link: {link_partial.get('link_id')} (Partial: {link_partial.get('is_partial')}, Min: ₹{link_partial.get('min_partial_amount')})")
     assert link_partial.get("is_partial"), "Must support hardship partial payments"
 
-    # Test Queue Re-forming with deltas
+    # Queue Re-forming test
     q_test = QueueEngine()
     q_test.load_borrowers(records[:50])
     top_before = q_test.get_top_queue(3)[0]["loan_id"]
     print(f" -> Initial Top Borrower: {top_before}")
     
-    # Event 1: Payment received
     q_test.handle_payment_event(top_before, amount_paid=50000, is_full=True)
     top_after = q_test.get_top_queue(3)[0]
     print(f" -> After Payment: Former top account status is {q_test.borrowers[top_before]['status']}")
     print(f" -> New Top Borrower: {top_after['loan_id']} (Rank Delta: {top_after['rank_delta']})")
     assert q_test.borrowers[top_before]["status"] == "PAID"
 
-    # Event 2: Promise lapse
     lapse_id = top_after["loan_id"]
     q_test.handle_promise_lapse(lapse_id)
     print(f" -> After Promise Lapse on {lapse_id}: Broken promises count is now {q_test.borrowers[lapse_id]['broken_promises_count']}")
@@ -158,7 +155,6 @@ def verify_all():
 
     redline_results.append(("REDLINE 5: Live Cashfree Sandbox & Dynamic Queue Re-Forming", "PASS"))
 
-    # Summary
     print("\n" + "=" * 70)
     print("VERIFICATION SUMMARY:")
     for name, status in redline_results:

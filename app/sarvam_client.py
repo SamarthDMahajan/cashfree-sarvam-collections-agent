@@ -227,3 +227,4 @@ class SarvamClient:
 
 # Global Sarvam singleton
 sarvam_client = SarvamClient()
+

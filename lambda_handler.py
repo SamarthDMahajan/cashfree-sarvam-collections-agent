@@ -11,7 +11,7 @@ import json
 import os
 from typing import Dict, Any
 
-from app.compliance import (
+from app.core.compliance import (
     evaluate_borrower_call_compliance,
     check_calling_hours,
     check_compassionate_hold,
@@ -19,8 +19,8 @@ from app.compliance import (
     get_mandatory_recording_disclosure,
     get_gro_footer
 )
-from app.fair_ranker import calculate_borrower_score, rank_borrowers
-from app.nlp_extractor import extract_signals_from_note
+from app.core.ranker import calculate_borrower_score, rank_borrowers
+from app.core.signals import extract_signals_from_note, generate_outreach_script
 
 def lambda_handler(event: Dict[str, Any], context: Any = None) -> Dict[str, Any]:
     """
@@ -56,7 +56,6 @@ def lambda_handler(event: Dict[str, Any], context: Any = None) -> Dict[str, Any]
     else:
         payload = event
 
-    # Determine action
     action = payload.get("action", "").lower()
     event_type = payload.get("type", "")
 
@@ -107,31 +106,11 @@ def lambda_handler(event: Dict[str, Any], context: Any = None) -> Dict[str, Any]
     # 4. Generate Polite Regional Script
     if action == "generate_script":
         borrower = payload.get("borrower", {})
-        name = borrower.get("borrower_name", "Valued Customer")
-        amount = float(borrower.get("amount_due", 0))
-        lang = borrower.get("preferred_language", "hi-IN")
-        disclosure = get_mandatory_recording_disclosure(lang)
-        gro_footer = get_gro_footer()
-        
-        body = f"Hello {name}, your loan balance is ₹{amount:,.0f}. Kindly settle via the secure Cashfree UPI link."
-        if lang == "hi-IN":
-            body = f"नमस्ते {name} जी, आपके बैंक खाते में ₹{amount:,.0f} की देय राशि लंबित है। कृपया इसे कैशफ्री यूपीआई लिंक से भरें।"
-        elif lang == "kn-IN":
-            body = f"ನಮಸ್ಕಾರ {name} ಅವರೇ, ನಿಮ್ಮ ಸಾಲದ ಖಾತೆಯಲ್ಲಿ ₹{amount:,.0f} ಬಾಕಿ ಇದೆ. ದಯವಿಟ್ಟು ಕ್ಯಾಶ್‌ಫ್ರೀ ಯುಪಿಐ ಬಳಸಿ."
-        elif lang == "ta-IN":
-            body = f"வணக்கம் {name}, உங்கள் கடன் கணக்கில் ₹{amount:,.0f} நிலுவை உள்ளது. கேஷ்ஃப்ரீ லிங்க் மூலம் செலுத்தலாம்."
-
-        full_script = f"{disclosure}\n\n{body}\n\n[{gro_footer}]"
+        script = generate_outreach_script(borrower)
         return {
             "statusCode": 200,
             "headers": headers,
-            "body": json.dumps({
-                "language": lang,
-                "disclosure": disclosure,
-                "body": body,
-                "gro_footer": gro_footer,
-                "full_script": full_script
-            })
+            "body": json.dumps(script)
         }
 
     # 5. Default Health & Relay Ping

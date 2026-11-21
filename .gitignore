@@ -34,6 +34,10 @@ build/
 *.sqlite3
 *.log
 
+# Generated Book CSV (gitignored per spec)
+app/data/book.csv
+data/borrower_book_4200.csv
+
 # OS artifacts
 .DS_Store
 Thumbs.db

@@ -271,3 +271,4 @@ def audit_fairness_and_proxies(
     audit_results["excluded_protected_columns"] = PROTECTED_ATTRIBUTES
     audit_results["allowed_scoring_features"] = ALLOWED_SCORING_FEATURES
     return audit_results
+

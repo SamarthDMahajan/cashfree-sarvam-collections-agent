@@ -12,111 +12,81 @@
 
 ## Executive Summary
 
-The **Cashfree × Sarvam AI Collections Agent** is an autonomous, fair, and regulatory-hardened recovery optimization engine built for modern Indian lenders. Rather than relying on blunt aggressive collection tactics or unexplainable blackbox models, this system algorithmically predicts **who will pay first** using strictly permissible financial/behavioral signals, multilingual code-mixed speech understanding, and instant UPI settlement links.
+The **Cashfree × Sarvam AI Collections Agent** is an autonomous, fair, and regulatory-hardened recovery optimization engine built for Indian consumer and MSME lending books. Rather than relying on aggressive, non-compliant calling tactics or unexplainable blackbox models, this system algorithmically predicts **who will pay first** using strictly permissible financial/behavioral signals, multilingual code-mixed speech understanding, and instant UPI settlement links.
 
 ### Key Performance Highlights:
 - **Sub-2s Processing of 4,200 Accounts:** Cleans messy names, dates, phone numbers, duplicates, and code-mixed notes across 4,200 rows in <1.8s.
-- **+19.1% Payer Capture Lift @ Top 360:** Captures 318 paying borrowers vs. 267 in default loan-number order (+19.1% recovery efficiency on unseen curveball books).
-- **10% Epsilon-Greedy Selection-Bias Mitigation:** Allocates 10% of call slots (36 / 360) for exploratory sampling to eliminate historical borrower starvation.
+- **+16.9% Payer Capture Lift @ Top 360:** Captures 312 paying borrowers vs. 267 in natural loan-number order (+16.9% recovery lift on unseen curveball books).
+- **10% Epsilon-Greedy Exploration Budget:** Allocates 10% of call slots (36 / 360) for exploratory sampling to eliminate historical borrower starvation and selection bias.
 - **100% Mathematically Proxy-Free (DIR $\ge$ 0.80):** Strict hard-exclusion of protected attributes (`name`, `gender`, `religion`, `caste`, `pincode`, `area`, `language`) with zero statistical proxy correlation ($|r| < 0.07$).
 - **RBI Jan 2027 Ready:** 8:00 AM – 7:00 PM IST calling window enforcement, mandatory regional call-recording disclosures, Principal Grievance Redressal Officer (GRO) contact footers, 14-day compassionate medical holds, and zero-shaming tone guards.
 
 ---
 
-## Architectural Workflow
+## Architecture & Directory Structure
 
-```
-[Borrower Book CSV / Live CRM Feed] (4,200+ messy records)
-                     │
-                     ▼
-    [Deduplication & Hygiene Sanitizer]
-                     │
-                     ▼
-       [RBI Jan 2027 Compliance Gate]
-     ├── Calling Hours Check (08:00 - 19:00 IST)
-     ├── Compassionate Hold (Hospital / Bereavement / Wedding)
-     └── Reconciliation Hold ("Branch mein de diya")
-                     │
-                     ▼
-        [Allowlisted Fair Ranker Engine]
-     ├── Allowed: DPD, Past Promises, Intent, Inbound Recency
-     ├── Hard-Excluded: Name, Gender, Religion, Caste, Pincode, Language
-     └── 10% Epsilon-Greedy Exploration (Anti-Bias Slots)
-                     │
-                     ▼
-    [Optimal Call Queue (Top 360 Slots)]
-     ├── Manager Read-Aloud Reasons
-     └── Real-Time Rank Deltas (↑ / ↓)
-          │                             │
-          ▼                             ▼
- [Sarvam AI Voice Engine]      [Cashfree Sandbox PG Links]
- ├── Bulbul v3 Vernacular TTS  ├── Full Settlement Link
- ├── Saaras v4 Codemix STT     ├── Hardship Partial Link (20% min)
- └── Mandatory Recording + GRO └── Live Status Sync & Webhooks
-```
+Built so both local FastAPI (`app/main.py`) and AWS Lambda (`lambda_handler.py`) import the exact same `app/core/*` modules:
 
----
-
-## Repository Structure
-
-```
+```text
 cashfree-sarvam-collections-agent/
-├── app/
-│   ├── __init__.py
-│   ├── config.py             # RBI Jan 2027 rules, GRO info, feature whitelists
-│   ├── compliance.py         # 8am-7pm window, compassionate & recon holds, tone guard
-│   ├── fair_ranker.py        # Allowlisted scoring, epsilon-greedy, DIR audit
-│   ├── cashfree_client.py    # Sandbox link creator (Full & Partial) & live sync
-│   ├── sarvam_client.py      # Bulbul TTS, Saaras STT, polite regional scripts
-│   ├── queue_engine.py       # Event-driven dynamic queue & rank deltas (↑/↓)
-│   ├── nlp_extractor.py      # Code-mixed intent parser (Hinglish/Kannada/Tamil)
-│   └── main.py               # FastAPI backend & API endpoints
-├── data/
-│   ├── borrower_book_4200.csv       # Main 4,200 borrower book (messy duplicates, dates, notes)
-│   └── curveball_unseen_sample.csv  # 600-row held-out unseen test set with ground truth
-├── dist/
-│   └── lambda_deploy.zip            # Built AWS Lambda deployment artifact (git-ignored)
+├── .env                          # ALREADY EXISTS — DO NOT OVERWRITE OR COMMIT
+├── .env.example                  # Placeholder variable names only
+├── .gitignore                    # Strictly excludes .env, APIKey.csv, dist/, app/data/book.csv
+├── requirements.txt              # fastapi uvicorn sarvamai httpx pandas numpy pydantic python-dotenv python-multipart
+├── README.md                     # Quickstart, architecture, demo runbook
+├── DESIGN_CHOICES.md             # Architectural blueprint with real borrower IDs from generator
+├── lambda_handler.py             # Imports app/core/*; handles proxy event + raw dict; JSON only
 ├── scripts/
-│   ├── test_connections.py          # Smoke test for live Cashfree Sandbox & Sarvam AI
-│   ├── generate_book.py             # Generates realistic borrower book & held-out set
-│   ├── test_milestone1.py           # Verification for Milestone 1
-│   ├── test_milestone2.py           # Verification for Milestone 2
-│   ├── test_lambda_handler.py       # Unit test for AWS Lambda handler
-│   ├── verify_all_redlines.py       # Master automated verification of all 5 redlines
-│   ├── build_lambda_zip.py          # Windows-compatible zip packager for AWS Lambda
-│   └── relay_sample_payload.json    # Sample Cashfree Relay webhook payload
-├── static/
-│   ├── index.html                   # 4-panel Single-Page Judge Command Center UI
-│   ├── style.css                    # Dark high-contrast styling with accessibility
-│   └── app.js                       # Live reactive frontend client
-├── lambda_handler.py                # Standalone AWS Lambda entrypoint
-├── requirements.txt                 # Dependencies
-├── .gitignore                       # Strict exclusion of .env, dist/, and secrets
-├── .env.example                     # Environment variables template
-├── DESIGN_CHOICES.md                # Architectural design choices & trade-off rationale
-└── README.md
+│   ├── test_connections.py       # Live smoke test for Sarvam + Cashfree Sandbox
+│   ├── build_lambda_zip.py       # Windows-safe zip builder -> dist/lambda_deploy.zip
+│   ├── verify_all_redlines.py    # Automated PASS/FAIL suite for every PS2 red line
+│   └── relay_sample_payload.json # Sample Cashfree/Relay webhook JSON for testing
+└── app/
+    ├── __init__.py
+    ├── main.py                   # FastAPI app; loads/generates book on startup; serves static/index.html
+    ├── config.py                 # ALLOWED_SCORING_FEATURES, EXCLUDED_PROXY_FEATURES, RBI window, GRO block, URLs
+    ├── models.py                 # Pydantic schemas: Account, CallLog, PaymentLink, FairnessReport, SignalExtraction
+    ├── data/
+    │   ├── generate_book.py      # Generates messy 4,200-row book.csv + 500-row unseen curveball_unseen.csv
+    │   ├── book.csv              # Generated locally (gitignored)
+    │   └── curveball_unseen.csv  # Kept for demo curveball upload rehearsal
+    ├── core/
+    │   ├── __init__.py
+    │   ├── ranker.py             # Allowlisted linear scorer + 10% epsilon-greedy exploration + deterministic 1-line reason
+    │   ├── fairness.py           # Disparate Impact Ratio (>=0.80) + Pearson correlation vs excluded proxies
+    │   ├── compliance.py         # 08:00–19:00 IST gate, recording disclosure, GRO footer, compassionate/hardship gate
+    │   ├── signals.py            # sarvam-105b-conversations wrapper -> structured JSON signals + empathetic regional script
+    │   ├── voice.py              # saaras:v4 STT (mode="codemix") + bulbul:v3 / bulbul:v4-flash TTS -> base64 WAV
+    │   ├── cashfree.py           # POST /pg/links (full & partial), GET /pg/links/{link_id}, webhook parser
+    │   └── queue_engine.py       # In-memory + SQLite state, dynamic re-rank, rank-delta badges (↑/↓), hold lanes
+    ├── routes/
+    │   ├── __init__.py
+    │   ├── queue.py              # GET /api/queue (top 360 + hold lanes + stats), GET /api/audit-logs
+    │   ├── outreach.py           # POST /api/outreach/{id}/speak (script + Bulbul TTS), POST /api/outreach/{id}/voice-reply, POST /api/outreach/{id}/payment-link
+    │   ├── actions.py            # POST /api/actions/sync-link/{link_id}, /simulate-lapse/{id}, /already-paid-hold/{id}, /test-time-block
+    │   ├── curveball.py          # POST /api/curveball/upload -> clean + rank in <3s + Capture Rate & Recovery Lift @ Top 360
+    │   ├── fairness.py           # GET /api/fairness -> live Disparate Impact + proxy correlations + ALLOWED_SCORING_FEATURES proof
+    │   └── webhook.py            # POST /api/webhook/cashfree -> handles PAYMENT_LINK_EVENT (PAID/PARTIALLY_PAID/EXPIRED) & Relay calls
+    └── static/
+        └── index.html            # Single-page Judge Command Center (Tailwind CDN + vanilla JS, auto-refreshes queue)
 ```
 
 ---
 
 ## Quickstart Runbook
 
-### 1. Prerequisites
-- Python 3.12+ installed
-- Working `.env` file (see `.env.example`)
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Verify Live Connectivity (Smoke Test)
+### 2. Verify Live Connectivity (Smoke Test)
 ```bash
 python scripts/test_connections.py
 ```
 *Asserts LIVE 200 OK responses from Cashfree Sandbox (`https://sandbox.cashfree.com/pg/links`, `2026-01-01`) and Sarvam AI (`sarvam-105b-conversations` and `bulbul:v3`).*
 
-### 4. Run Master Redlines Verification
+### 3. Run Master Redlines Verification Suite
 ```bash
 python scripts/verify_all_redlines.py
 ```
@@ -127,7 +97,7 @@ python scripts/verify_all_redlines.py
 4. Positive Recovery Lift @ Top 360 on unseen Curveball CSV
 5. Live Cashfree link creation + dynamic queue re-forming with rank deltas
 
-### 5. Launch Single-Page Judge Command Center UI
+### 4. Launch Single-Page Judge Command Center UI
 ```bash
 python app/main.py
 ```
@@ -157,7 +127,7 @@ The Command Center provides 4 interactive panels:
 ### Panel 3 — Demo-Day Curveball & Mathematical Proof
 - Drag-and-drop ANY unseen borrower CSV (or click "Run Curveball Evaluation").
 - Cleans and ranks in <3 seconds.
-- Displays **Payer Capture Lift @ Top 360 (+19.1%)** and **Recovery Amount Lift (+16.2%)**.
+- Displays **Payer Capture Lift @ Top 360 (+16.9%)** and **Recovery Amount Lift (+12.0%)**.
 - Shows complete **Mathematical Fairness & Proxy Table** verifying Gender DIR ($\ge 0.80$), Language DIR ($\ge 0.80$), and Pearson correlations ($|r| < 0.08$).
 
 ### Panel 4 — RBI Jan 2027 Audit & Compliance Log
@@ -169,7 +139,7 @@ The Command Center provides 4 interactive panels:
 ## AWS Lambda & Cashfree Relay Integration
 
 - **Lambda Function Target:** `samarthdmahajan-collections-agent` (`ap-south-1`, Python 3.12, role `samarthdmahajan-exec`, timeout 30s).
-- **Deployment Artifact:** `dist/lambda_deploy.zip` (packaged via `python scripts/build_lambda_zip.py`).
+- **Deployment Artifact:** `dist/lambda_deploy.zip` (built via `python scripts/build_lambda_zip.py`).
 - **Live Inbound Webhook / Target URL:**
   `https://ggfyc5ptui4jk3ogez6vzo66r40wqloo.lambda-url.ap-south-1.on.aws/samarthdmahajan-collections-agent/`
 
@@ -185,5 +155,5 @@ curl -X POST "https://ggfyc5ptui4jk3ogez6vzo66r40wqloo.lambda-url.ap-south-1.on.
 
 ## Security & Clean Code Guarantee
 
-- **Zero Secrets Tracked:** Git history contains no API keys or `.env` files. `.gitignore` strictly protects `.env`, `.env.*`, `dist/`, `*.zip`, `*.db`, `*.pyc`, and temporary files.
+- **Zero Secrets Tracked:** Git history contains no API keys or `.env` files. `.gitignore` strictly protects `.env`, `.env.*`, `dist/`, `app/data/book.csv`, and temporary files.
 - **Clean Git Logs:** Verified via `git ls-files | grep -i "\.env"` (only `.env.example` exists in repository).

@@ -273,3 +273,4 @@ def evaluate_borrower_call_compliance(
         "gro_footer": get_gro_footer(),
         "disclosure": get_mandatory_recording_disclosure(lang)
     }
+

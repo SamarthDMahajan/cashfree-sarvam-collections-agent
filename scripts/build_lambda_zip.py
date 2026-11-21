@@ -2,12 +2,11 @@
 Windows-compatible Lambda deployment package builder.
 Packages:
 - `lambda_handler.py`
-- `app/` folder (code and configurations)
+- `app/` folder (excluding `__pycache__`, `book.csv`)
 Outputs: `dist/lambda_deploy.zip`
 """
 import os
 import zipfile
-import shutil
 
 def build_zip():
     dist_dir = "dist"
@@ -19,17 +18,14 @@ def build_zip():
 
     print(f"Creating Lambda deployment artifact: {zip_path}")
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        # 1. Add lambda_handler.py
         if os.path.exists("lambda_handler.py"):
             zf.write("lambda_handler.py", arcname="lambda_handler.py")
             print(" + Added lambda_handler.py")
 
-        # 2. Add app package files
         for root, dirs, files in os.walk("app"):
-            # Exclude __pycache__
             dirs[:] = [d for d in dirs if d != "__pycache__"]
             for file in files:
-                if file.endswith((".pyc", ".pyo")):
+                if file.endswith((".pyc", ".pyo")) or file == "book.csv":
                     continue
                 file_path = os.path.join(root, file)
                 arcname = os.path.relpath(file_path, os.getcwd())

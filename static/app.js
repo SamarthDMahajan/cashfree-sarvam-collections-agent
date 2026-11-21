@@ -575,3 +575,4 @@ function filterAuditLogs() {
         r.style.display = r.innerText.toLowerCase().includes(q) ? "" : "none";
     });
 }
+
