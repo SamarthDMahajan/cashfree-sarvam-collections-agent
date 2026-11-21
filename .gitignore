@@ -1,0 +1,44 @@
+# Security & Secrets - NEVER COMMIT
+.env
+.env.*
+*.env
+!.env.example
+APIKey.csv
+*.pem
+*.key
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts & packages
+dist/
+build/
+*.egg-info/
+*.zip
+*.tar.gz
+
+# Local databases & logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE config
+.idea/
+.vscode/

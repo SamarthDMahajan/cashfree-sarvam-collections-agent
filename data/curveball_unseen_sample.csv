@@ -1,0 +1,601 @@
+loan_id,borrower_name,phone,gender,religion,caste,city,pincode,preferred_language,due_date,dpd,amount_due,past_promises_kept_ratio,historical_pay_rate,inbound_recency_days,broken_promises_count,notes,borrower_opted_in,actually_paid
+TEST-20260001,Deepa Das,93791-72983,Female,Hindu,General,Coimbatore,641040,ta-IN,09/09/2026,69,10889.0,0.54,0.89,7,0,pay panna mudiyathu wrongful charges,False,1
+TEST-20260002,Divya Khan,97377 64155,Female,Hindu,General,Pune,411021,en-IN,"Sep 25, 2026",91,3292.0,0.86,0.86,3,2,Promised to pay tomorrow,True,0
+TEST-20260003,Shalini Das,919217986986,Female,Jain,General,Lucknow,226035,hi-IN,2026-09-26,2,3871.0,0.14,0.67,9,1,kal pakka pay kar dunga guarantee,False,1
+TEST-20260004,Rekha Joshi,92903-55175,Female,Hindu,OBC,Delhi,110021,hi-IN,"Aug 12, 2026",37,91769.0,0.64,0.53,14,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260005,Kavitha Sharma,91578 87787,Female,Hindu,General,Lucknow,226065,hi-IN,2026-10-12,57,128512.0,0.11,0.17,45,0,Promised to pay tomorrow,False,1
+TEST-20260006,Arun Nair,919896262533,Male,Hindu,General,Bengaluru,560030,kn-IN,07-11-2026,18,8969.0,0.23,0.57,43,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260007,Imran Mehta,9107436324,Male,Hindu,OBC,Mumbai,400007,en-IN,09/11/2026,66,3886.0,0.32,0.7,25,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260008,Anand Yadav,+91 91462 39617,Male,Hindu,SC,Jaipur,302076,hi-IN,06/08/2026,52,4398.0,0.56,0.59,37,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260009,Anand Mishra,9619404690,Male,Christian,OBC,Pune,411009,en-IN,2026-08-29,15,135296.0,0.11,0.48,17,0,,False,0
+TEST-20260010,Deepak Joshi,919824840283,Male,Hindu,SC,Mysuru,570060,kn-IN,2026-09-10,37,106275.0,0.65,0.68,40,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260011,Deepa Mukherjee,98570 69335,Female,Hindu,General,Madurai,625019,ta-IN,30/10/2026,99,1672.0,0.23,0.64,34,4,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260012,Anand Patel,91403-45003,Male,Hindu,SC,Lucknow,226072,hi-IN,18/09/2026,20,96648.0,0.26,0.94,33,1,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260013,Chitra Nair,96953-30382,Female,Hindu,General,Mumbai,400076,en-IN,04-10-2026,20,11000.0,0.58,0.53,26,0,Promised to pay tomorrow,True,1
+TEST-20260014,Manish Bose,99883-22277,Male,Hindu,OBC,Bengaluru,560015,kn-IN,14-10-2026,86,1060.0,0.75,0.65,4,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260015,Fatima Gupta,96530-95526,Female,Jain,OBC,Madurai,625061,ta-IN,10/11/2026,31,125605.0,0.43,0.43,3,2,pay panna mudiyathu wrongful charges,False,0
+TEST-20260016,Sanjay Kumar,93022-63029,Male,Hindu,SC,Hubballi,580067,kn-IN,"Sep 14, 2026",28,10410.0,0.67,0.76,25,1,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260017,Sanjay Nair,95553 21301,Male,Hindu,SC,Chennai,600013,ta-IN,08-09-2026,69,70199.0,0.37,0.77,13,2,enaku salary 10th varum appo pay pannidren,True,0
+TEST-20260018,Karthik Verma,919608454451,Male,Hindu,OBC,Madurai,625066,ta-IN,17-10-2026,9,91766.0,0.11,0.85,13,2,"Already deposited at bank branch 2 days ago, check counter ledger",True,1
+TEST-20260019,Anand Kaur,+91 99130 14350,Male,Hindu,General,Coimbatore,641055,ta-IN,2026-08-24,2,14704.0,0.44,0.28,18,0,konjam kashtam sir half amount pay panren link anupunga,False,1
+TEST-20260020,Mohammad Mishra,919502380307,Male,Hindu,General,Madurai,625014,ta-IN,12-09-2026,13,63930.0,0.26,0.71,1,1,naalaiki kandippa pay panren,False,1
+TEST-20260021,Ritu Gupta,97685-60308,Female,Muslim,General,Hyderabad,500001,en-IN,"Oct 21, 2026",62,58700.0,0.91,0.53,8,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260022,Deepak Sharma,91321 58671,Male,Hindu,General,Bengaluru,560041,kn-IN,25/09/2026,61,105278.0,0.72,0.34,43,0,branch nalli duddu kottidini receipt ide,False,0
+TEST-20260023,Imran Mehta,+91 97677 64530,Male,Hindu,OBC,Madurai,625012,ta-IN,"Nov 05, 2026",57,1511.0,0.24,0.61,29,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260024,Sunita Ahmed,96657-85752,Female,Hindu,OBC,Delhi,110005,hi-IN,15-11-2026,66,2946.0,0.41,0.84,18,2,two days me clear karta hu,False,1
+TEST-20260025,Amina Das,94399-47706,Female,Muslim,OBC,Mumbai,400038,en-IN,2026-11-09,96,1461.0,0.84,0.41,44,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260026,Rahul Mehta,97638 06663,Male,Hindu,SC,Jaipur,302024,hi-IN,03/10/2026,59,2436.0,0.6,0.45,10,0,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260027,Vikram Pandey,9390578598,Male,Muslim,General,Madurai,625031,ta-IN,16-10-2026,35,1702.0,0.82,0.72,11,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260028,Venkatesh Bose,+91 93272 09741,Male,Hindu,OBC,Mysuru,570016,kn-IN,27-10-2026,31,88400.0,0.28,0.38,31,3,branch nalli duddu kottidini receipt ide,False,0
+TEST-20260029,Arun Pandey,95699-57464,Male,Hindu,SC,Mysuru,570022,kn-IN,2026-10-05,99,54036.0,0.11,0.78,26,1,"Salary expected on 8th, will clear full EMI then",True,1
+TEST-20260030,Rohan Yadav,95398-39434,Male,Hindu,OBC,Hubballi,580024,kn-IN,"Aug 06, 2026",12,528.0,0.33,0.2,32,1,,False,1
+TEST-20260031,Preeti Deshmukh,9535928079,Female,Hindu,General,Mysuru,570004,kn-IN,20/11/2026,1,8463.0,0.14,0.2,17,0,Follow up required,False,1
+TEST-20260032,Sanjay Joshi,9457639565,Male,Hindu,OBC,Delhi,110056,hi-IN,2026-09-04,16,106512.0,0.88,0.35,2,0,Promised to pay tomorrow,False,1
+TEST-20260033,Arun Gupta,9114390908,Male,Hindu,General,Mysuru,570023,kn-IN,16-10-2026,92,48329.0,0.79,0.38,32,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260034,Kavitha Yadav,+91 95844 77670,Female,Hindu,SC,Bengaluru,560020,kn-IN,2026-09-03,10,103575.0,0.63,0.38,10,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260035,Aarti Ahmed,94689 99071,Female,Hindu,OBC,Jaipur,302017,hi-IN,12/11/2026,99,1192.0,0.5,0.82,4,2,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260036,Prashant Nair,+91 98884 36074,Male,Hindu,OBC,Pune,411057,en-IN,"Oct 18, 2026",53,99012.0,0.52,0.78,41,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260037,Karthik Chavan,+91 99040 92261,Male,Hindu,General,Hubballi,580083,kn-IN,17/10/2026,82,1330.0,0.64,0.5,4,2,naale kanditha kodtini,False,0
+TEST-20260038,Ramesh Singh,92176 47757,Male,Hindu,OBC,Chennai,600067,ta-IN,2026-10-28,87,5146.0,0.71,0.9,26,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260039,Suresh Singh,919338144895,Male,Hindu,OBC,Hubballi,580096,kn-IN,"Sep 27, 2026",34,5501.0,0.68,0.12,22,1,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260040,Rekha Iyer,919863453497,Female,Hindu,General,Bengaluru,560011,kn-IN,2026-10-15,98,85743.0,0.56,0.5,7,0,sambala 5th baratte aaga full pay madtini,False,1
+TEST-20260041,Mohammad Bose,+91 92713 14574,Male,Hindu,OBC,Madurai,625081,ta-IN,2026-08-05,103,683.0,0.54,0.44,23,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260042,Harpreet Mukherjee,919120311012,Male,Hindu,General,Jaipur,302045,hi-IN,05-08-2026,81,132716.0,0.14,0.14,25,1,fraud call hai dispute raise kiya hai maine,False,1
+TEST-20260043,Geeta Kumar,919711047008,Female,Hindu,OBC,Jaipur,302081,hi-IN,"Sep 05, 2026",89,662.0,0.41,0.69,25,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260044,Sunita Reddy,+91 98126 29845,Female,Hindu,General,Mumbai,400076,en-IN,07/08/2026,84,73863.0,0.66,0.37,9,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260045,Rohan Ahmed,96147-55461,Male,Hindu,SC,Hubballi,580078,kn-IN,06-10-2026,104,5971.0,0.24,0.83,17,1,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260046,Lakshmi Gowda,9552445342,Female,Muslim,General,Jaipur,302080,hi-IN,"Sep 15, 2026",42,1183.0,0.13,0.87,8,0,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260047,Ajay Nair,919689495300,Male,Hindu,SC,Hubballi,580026,kn-IN,20-08-2026,89,62662.0,0.85,0.45,41,2,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260048,Zoya Jain,9450623892,Female,Muslim,OBC,Coimbatore,641018,ta-IN,04-08-2026,43,135932.0,0.42,0.29,12,1,naalaiki kandippa pay panren,False,1
+TEST-20260049,Chitra Mukherjee,94647 74733,Female,Hindu,OBC,Pune,411016,en-IN,01/09/2026,72,135062.0,0.8,0.3,18,0,Promised to pay tomorrow,False,0
+TEST-20260050,Ramesh Chavan,919842089957,Male,Hindu,OBC,Mysuru,570016,kn-IN,"Nov 07, 2026",50,125674.0,0.73,0.1,17,1,Promised to pay tomorrow,False,1
+TEST-20260051,Vijay Deshmukh,9145750690,Male,Jain,SC,Pune,411037,en-IN,"Nov 19, 2026",60,56233.0,0.4,0.14,10,2,Will pay by 5th as soon as my salary is credited,False,0
+TEST-20260052,Preeti Iyer,+91 94510 83851,Female,Hindu,OBC,Madurai,625051,ta-IN,2026-09-01,82,2995.0,0.67,0.33,21,0,Promised to pay tomorrow,False,1
+TEST-20260053,Priya Iyer,+91 91466 03396,Female,Hindu,ST,Hyderabad,500029,en-IN,17-09-2026,83,27144.0,0.61,0.28,30,3,Follow up required,False,0
+TEST-20260054,Swati Khan,919774352132,Female,Hindu,General,Mumbai,400063,en-IN,"Aug 21, 2026",44,92843.0,0.17,0.17,2,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260055,Anand Verma,+91 94810 21502,Male,Muslim,OBC,Pune,411032,en-IN,18-09-2026,14,9466.0,0.27,0.11,23,2,Promised to pay tomorrow,False,1
+TEST-20260056,Rekha Joshi,+91 98794 28861,Female,Hindu,ST,Mumbai,400009,en-IN,05-10-2026,1,45208.0,0.26,0.37,16,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260057,Ali Verma,93043 66281,Male,Hindu,OBC,Hyderabad,500012,en-IN,2026-10-04,24,2196.0,0.61,0.27,42,4,Follow up required,False,1
+TEST-20260058,Deepak Kaur,95559 01603,Male,Sikh,SC,Delhi,110052,hi-IN,2026-10-26,55,48847.0,0.23,0.82,34,0,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260059,Sunita Das,94573 65527,Female,Hindu,General,Lucknow,226033,hi-IN,06-08-2026,72,114967.0,0.51,0.65,44,2,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260060,Chitra Patel,9572173842,Female,Hindu,General,Bengaluru,560074,kn-IN,2026-09-20,82,5519.0,0.34,0.25,2,1,branch nalli duddu kottidini receipt ide,False,0
+TEST-20260061,Rahul Nair,+91 97244 25924,Male,Muslim,ST,Hubballi,580090,kn-IN,05/11/2026,21,67202.0,0.45,0.67,38,0,swalpa duddu ide half pay madtini link kalsi,True,1
+TEST-20260062,Mohammad Gupta,919831017560,Male,Muslim,SC,Bengaluru,560007,kn-IN,04-11-2026,76,29717.0,0.28,0.91,11,1,naale kanditha kodtini,True,1
+TEST-20260063,Naveen Gupta,9344215501,Male,Hindu,OBC,Mysuru,570006,kn-IN,17-08-2026,20,28264.0,0.55,0.33,3,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260064,Fatima Ahmed,99190 79714,Female,Muslim,ST,Bengaluru,560043,kn-IN,27-08-2026,72,7987.0,0.34,0.41,30,0,kodolla tumba extra interest haktidira,False,1
+TEST-20260065,Mohammad Gupta,96527 30631,Male,Hindu,OBC,Hubballi,580091,kn-IN,16/10/2026,48,29419.0,0.55,0.14,10,2,sambala 5th baratte aaga full pay madtini,False,0
+TEST-20260066,Deepa Mehta,9121871418,Female,Muslim,ST,Mumbai,400032,en-IN,2026-11-04,58,9355.0,0.71,0.13,34,1,Promised to pay tomorrow,False,1
+TEST-20260067,Mohammad Gowda,919268361452,Male,Hindu,General,Bengaluru,560060,kn-IN,17-11-2026,52,2161.0,0.53,0.26,32,1,,False,1
+TEST-20260068,Kavitha Jain,+91 92782 43743,Female,Hindu,General,Delhi,110003,hi-IN,10/11/2026,3,80257.0,0.61,0.17,37,2,10 tarik ko salary aate hi link pe bhar dunga,False,0
+TEST-20260069,Mohammad Jain,919700840024,Male,Hindu,General,Pune,411068,en-IN,27-09-2026,18,29000.0,0.43,0.29,22,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260070,Rohan Sharma,94947 23626,Male,Hindu,General,Hyderabad,500014,en-IN,"Oct 14, 2026",80,49114.0,0.2,0.95,33,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260071,Karthik Iyer,99302 27862,Male,Hindu,General,Mysuru,570052,kn-IN,2026-10-19,68,56631.0,0.62,0.68,40,0,swalpa duddu ide half pay madtini link kalsi,False,1
+TEST-20260072,Deepak Joshi,92197 39163,Male,Jain,OBC,Chennai,600002,ta-IN,2026-08-30,13,891.0,0.45,0.61,35,3,naalaiki kandippa pay panren,False,1
+TEST-20260073,Naveen Verma,9922286462,Male,Hindu,OBC,Jaipur,302040,hi-IN,17/10/2026,83,4510.0,0.66,0.2,25,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260074,Kavitha Iyer,94144 04522,Female,Hindu,OBC,Mumbai,400070,en-IN,31/08/2026,48,35196.0,0.2,0.22,4,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260075,Ajay Jain,99106-90832,Male,Hindu,SC,Jaipur,302079,hi-IN,2026-08-31,37,2271.0,0.75,0.33,37,0,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260076,Venkatesh Kumar,91725 58438,Male,Jain,General,Delhi,110031,hi-IN,"Sep 22, 2026",100,38079.0,0.4,0.65,14,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260077,Sunita Kaur,+91 92506 46026,Female,Muslim,OBC,Hyderabad,500048,en-IN,"Aug 18, 2026",57,56564.0,0.84,0.13,19,1,,False,1
+TEST-20260078,Lakshmi Joshi,919818246056,Female,Hindu,SC,Lucknow,226040,hi-IN,2026-09-17,50,95627.0,0.81,0.47,13,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260079,Chitra Jain,94392-50495,Female,Sikh,OBC,Lucknow,226013,hi-IN,2026-10-02,53,2499.0,0.92,0.57,1,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260080,Rohan Verma,919848773955,Male,Hindu,OBC,Hubballi,580066,kn-IN,24-10-2026,29,97529.0,0.25,0.2,26,0,sambala 5th baratte aaga full pay madtini,False,1
+TEST-20260081,Harpreet Jain,93991-14920,Male,Hindu,OBC,Lucknow,226009,hi-IN,16-09-2026,58,12455.0,0.56,0.76,10,0,kal pakka pay kar dunga guarantee,False,1
+TEST-20260082,Sanjay Iyer,9656245099,Male,Christian,OBC,Delhi,110060,hi-IN,28/08/2026,22,105156.0,0.5,0.22,39,1,Promised to pay tomorrow,False,1
+TEST-20260083,Swati Iyer,96792-85607,Female,Muslim,OBC,Coimbatore,641053,ta-IN,20-10-2026,82,87520.0,0.53,0.55,36,0,"Facing temporary liquidity shortage, please send partial settlement link",True,1
+TEST-20260084,Sanjay Mishra,97912-21994,Male,Jain,OBC,Lucknow,226026,hi-IN,2026-09-22,44,695.0,0.43,0.94,38,0,Follow up required,False,1
+TEST-20260085,Deepak Sharma,9402194300,Male,Hindu,General,Chennai,600007,ta-IN,"Oct 14, 2026",78,4446.0,0.45,0.24,39,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260086,Harpreet Chavan,+91 94972 46592,Male,Hindu,OBC,Coimbatore,641038,ta-IN,31-10-2026,84,89264.0,0.25,0.32,15,1,,False,1
+TEST-20260087,Chitra Yadav,+91 96075 26493,Female,Hindu,OBC,Delhi,110069,hi-IN,2026-09-22,31,30959.0,0.28,0.46,22,3,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260088,Shalini Nair,95644-11913,Female,Hindu,SC,Mumbai,400050,en-IN,30/08/2026,13,35482.0,0.56,0.32,19,0,,False,1
+TEST-20260089,Rajesh Yadav,92626-38904,Male,Hindu,General,Pune,411060,en-IN,29-08-2026,19,2563.0,0.6,0.37,14,1,Promised to pay tomorrow,False,1
+TEST-20260090,Fatima Jain,919571730697,Female,Muslim,OBC,Delhi,110081,hi-IN,15/09/2026,22,8459.0,0.8,0.81,39,1,abhi paise kam hai aadha abhi de sakta hu baki next month,False,1
+TEST-20260091,Gurpreet Kumar,9461605230,Male,Hindu,SC,Bengaluru,560003,kn-IN,"Sep 27, 2026",82,5360.0,0.58,0.42,29,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260092,Karthik Gowda,919388912776,Male,Hindu,General,Delhi,110024,hi-IN,2026-08-23,38,8432.0,0.16,0.87,27,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260093,Harpreet Reddy,+91 93961 65727,Male,Hindu,SC,Bengaluru,560078,kn-IN,2026-10-26,44,1808.0,0.45,0.34,1,3,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260094,Fatima Iyer,97881-77758,Female,Hindu,General,Mysuru,570046,kn-IN,"Oct 17, 2026",3,10602.0,0.26,0.47,41,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260095,Ali Kumar,9256934613,Male,Hindu,OBC,Madurai,625043,ta-IN,"Oct 11, 2026",22,133135.0,0.41,0.83,36,0,naalaiki kandippa pay panren,False,1
+TEST-20260096,Prashant Singh,94603-45864,Male,Sikh,OBC,Jaipur,302060,hi-IN,2026-09-06,71,14613.0,0.91,0.55,40,2,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260097,Geeta Chavan,9332669992,Female,Hindu,OBC,Delhi,110061,hi-IN,04-10-2026,16,120907.0,0.37,0.61,45,1,two days me clear karta hu,False,1
+TEST-20260098,Deepa Sharma,93369-02550,Female,Muslim,General,Bengaluru,560065,kn-IN,"Sep 14, 2026",4,49554.0,0.32,0.2,15,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260099,Anand Kumar,91233-33609,Male,Muslim,OBC,Pune,411001,en-IN,05/09/2026,12,5553.0,0.37,0.47,11,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260100,Anand Das,92054-48534,Male,Hindu,General,Pune,411044,en-IN,20-09-2026,32,70403.0,0.85,0.12,14,2,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260101,Meenakshi Jain,919208783311,Female,Hindu,ST,Madurai,625021,ta-IN,"Sep 10, 2026",62,1778.0,0.36,0.4,39,0,hospital la admit aagi irukken surgery mudinjathum pesuren,False,0
+TEST-20260102,Harpreet Kaur,919561802731,Male,Hindu,OBC,Delhi,110012,hi-IN,16-10-2026,100,12029.0,0.14,0.71,16,0,,False,1
+TEST-20260103,Prashant Mehta,+91 93292 18646,Male,Muslim,SC,Mysuru,570019,kn-IN,"Aug 26, 2026",59,138563.0,0.12,0.46,0,1,sambala 5th baratte aaga full pay madtini,False,1
+TEST-20260104,Amit Iyer,9310677849,Male,Hindu,OBC,Pune,411049,en-IN,29-10-2026,83,117385.0,0.28,0.45,30,1,Follow up required,False,1
+TEST-20260105,Divya Das,919376739925,Female,Hindu,OBC,Jaipur,302042,hi-IN,2026-10-16,16,11273.0,0.41,0.23,8,0,10 tarik ko salary aate hi link pe bhar dunga,False,1
+TEST-20260106,Preeti Verma,98767 03607,Female,Hindu,ST,Coimbatore,641035,ta-IN,2026-11-01,75,2661.0,0.35,0.14,23,1,Promised to pay tomorrow,True,0
+TEST-20260107,Harpreet Patel,+91 92486 75737,Male,Sikh,OBC,Bengaluru,560041,kn-IN,20-10-2026,33,89306.0,0.15,0.81,8,0,swalpa duddu ide half pay madtini link kalsi,False,1
+TEST-20260108,Pooja Yadav,94175-74092,Female,Hindu,General,Chennai,600034,ta-IN,2026-09-16,21,1475.0,0.45,0.92,41,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260109,Amit Gupta,9662258557,Male,Hindu,ST,Bengaluru,560031,kn-IN,14-10-2026,80,61695.0,0.35,0.8,44,0,swalpa duddu ide half pay madtini link kalsi,False,1
+TEST-20260110,Amina Mishra,97357 34546,Female,Hindu,SC,Coimbatore,641081,ta-IN,"Aug 29, 2026",86,99766.0,0.32,0.63,3,2,naalaiki kandippa pay panren,False,0
+TEST-20260111,Neha Ahmed,+91 93972 27106,Female,Hindu,General,Pune,411028,en-IN,15/10/2026,75,133601.0,0.29,0.6,39,0,Follow up required,True,1
+TEST-20260112,Chitra Sharma,919340178576,Female,Hindu,OBC,Bengaluru,560015,kn-IN,04/08/2026,62,2634.0,0.82,0.53,12,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260113,Karthik Mishra,99576 92724,Male,Hindu,OBC,Coimbatore,641078,ta-IN,"Oct 08, 2026",71,1249.0,0.85,0.12,34,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260114,Manish Kaur,+91 95785 61716,Male,Hindu,OBC,Coimbatore,641050,ta-IN,06/10/2026,99,6338.0,0.5,0.13,20,0,naalaiki kandippa pay panren,False,1
+TEST-20260115,Rahul Singh,+91 97326 99077,Male,Hindu,OBC,Hyderabad,500019,en-IN,2026-11-18,17,1546.0,0.21,0.39,35,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260116,Swati Ahmed,97258-53739,Female,Hindu,General,Madurai,625047,ta-IN,"Aug 09, 2026",96,49014.0,0.77,0.89,23,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260117,Ali Iyer,919728594368,Male,Hindu,General,Hubballi,580047,kn-IN,28-09-2026,83,31547.0,0.53,0.48,18,0,branch nalli duddu kottidini receipt ide,False,0
+TEST-20260118,Amit Gowda,98196-17461,Male,Hindu,OBC,Hyderabad,500060,en-IN,15-10-2026,84,18524.0,0.38,0.22,24,4,Follow up required,False,0
+TEST-20260119,Vijay Chavan,93773 78386,Male,Hindu,OBC,Hyderabad,500038,en-IN,30-10-2026,77,10919.0,0.51,0.34,4,0,Promised to pay tomorrow,False,1
+TEST-20260120,Kavya Mishra,+91 97480 45462,Female,Christian,SC,Bengaluru,560018,kn-IN,2026-08-13,31,6347.0,0.91,0.41,10,0,sambala 5th baratte aaga full pay madtini,True,1
+TEST-20260121,Deepak Singh,9167483803,Male,Hindu,OBC,Coimbatore,641018,ta-IN,"Sep 27, 2026",36,90687.0,0.13,0.92,24,2,pay panna mudiyathu wrongful charges,True,0
+TEST-20260122,Ananya Mishra,+91 99431 65821,Female,Hindu,OBC,Hubballi,580064,kn-IN,14-09-2026,17,76224.0,0.58,0.48,35,1,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260123,Ananya Chavan,9844105853,Female,Hindu,ST,Chennai,600003,ta-IN,2026-08-11,30,59459.0,0.72,0.85,10,0,hospital la admit aagi irukken surgery mudinjathum pesuren,False,1
+TEST-20260124,Karthik Deshmukh,919175567228,Male,Hindu,General,Lucknow,226027,hi-IN,31/08/2026,35,4692.0,0.21,0.71,15,0,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260125,Geeta Mukherjee,96073-74654,Female,Hindu,OBC,Lucknow,226009,hi-IN,2026-10-11,24,1597.0,0.13,0.44,4,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260126,Ramesh Mukherjee,919294330095,Male,Hindu,OBC,Lucknow,226046,hi-IN,27-10-2026,49,1963.0,0.22,0.65,44,0,Promised to pay tomorrow,False,1
+TEST-20260127,Fatima Mukherjee,919508390140,Female,Sikh,OBC,Chennai,600036,ta-IN,2026-10-10,38,962.0,0.53,0.57,11,2,pay panna mudiyathu wrongful charges,False,1
+TEST-20260128,Lakshmi Ahmed,92444-26148,Female,Hindu,OBC,Coimbatore,641038,ta-IN,27/08/2026,3,1616.0,0.32,0.6,29,1,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260129,Amina Kaur,919907941879,Female,Hindu,General,Madurai,625020,ta-IN,28/09/2026,28,25774.0,0.26,0.82,34,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260130,Zoya Das,+91 96099 59968,Female,Christian,SC,Madurai,625030,ta-IN,02-09-2026,3,2910.0,0.34,0.54,27,2,pay panna mudiyathu wrongful charges,False,1
+TEST-20260131,Aditya Ahmed,9867108444,Male,Hindu,General,Madurai,625062,ta-IN,2026-10-31,83,1136.0,0.91,0.58,41,1,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260132,Shalini Joshi,9919562280,Female,Muslim,OBC,Hubballi,580067,kn-IN,11/11/2026,21,135331.0,0.81,0.65,0,0,Follow up required,True,1
+TEST-20260133,Vikram Mukherjee,919437363621,Male,Hindu,OBC,Hubballi,580022,kn-IN,28/08/2026,59,8501.0,0.81,0.73,16,0,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260134,Amina Jain,9890893497,Female,Hindu,General,Coimbatore,641044,ta-IN,"Aug 31, 2026",87,122536.0,0.12,0.39,30,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260135,Rajesh Iyer,+91 96962 48728,Male,Hindu,General,Pune,411018,en-IN,"Oct 01, 2026",97,4276.0,0.11,0.51,43,3,Will pay by 5th as soon as my salary is credited,False,0
+TEST-20260136,Prashant Ahmed,9273157776,Male,Hindu,SC,Chennai,600070,ta-IN,2026-09-15,4,12214.0,0.67,0.3,5,2,hospital la admit aagi irukken surgery mudinjathum pesuren,False,0
+TEST-20260137,Harpreet Reddy,98973 85453,Male,Hindu,General,Mumbai,400064,en-IN,"Sep 15, 2026",94,137366.0,0.79,0.58,3,1,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260138,Lakshmi Deshmukh,91895-10283,Female,Muslim,SC,Mumbai,400028,en-IN,"Aug 31, 2026",5,2507.0,0.47,0.35,27,3,"Disputing penal interest charges, will not pay until rectified",True,1
+TEST-20260139,Vikram Khan,91330 90641,Male,Muslim,General,Coimbatore,641025,ta-IN,"Sep 04, 2026",15,38781.0,0.31,0.18,33,2,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260140,Aarti Pandey,+91 99098 54915,Female,Hindu,General,Mysuru,570073,kn-IN,03/11/2026,84,1081.0,0.44,0.4,19,0,sambala 5th baratte aaga full pay madtini,False,0
+TEST-20260141,Naveen Deshmukh,919916939315,Male,Hindu,General,Delhi,110014,hi-IN,14/10/2026,85,1027.0,0.47,0.31,26,0,hospital me admit hu accident ho gaya tha 10 din baad baat karo,False,0
+TEST-20260142,Mohammad Khan,97865 08731,Male,Hindu,ST,Mumbai,400003,en-IN,2026-10-14,29,44470.0,0.41,0.82,38,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260143,Deepak Ahmed,98719 80751,Male,Hindu,General,Pune,411014,en-IN,2026-08-23,100,91502.0,0.26,0.59,12,0,Promised to pay tomorrow,False,1
+TEST-20260144,Pooja Kaur,919428020271,Female,Hindu,OBC,Madurai,625081,ta-IN,2026-09-08,27,103868.0,0.95,0.19,7,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260145,Karthik Reddy,98224-27738,Male,Muslim,OBC,Jaipur,302019,hi-IN,03/11/2026,19,2830.0,0.73,0.62,4,1,two days me clear karta hu,False,1
+TEST-20260146,Chitra Patel,919884550142,Female,Hindu,General,Bengaluru,560036,kn-IN,08/11/2026,33,56804.0,0.63,0.18,18,2,salary 7th barutte nodi kanditha pay madtini,False,1
+TEST-20260147,Preeti Gupta,9405175677,Female,Hindu,General,Mysuru,570041,kn-IN,30/10/2026,99,18997.0,0.11,0.83,35,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260148,Geeta Verma,9596041195,Female,Hindu,OBC,Chennai,600076,ta-IN,"Nov 17, 2026",25,1601.0,0.2,0.31,27,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260149,Gurpreet Verma,95768 43179,Male,Muslim,OBC,Delhi,110040,hi-IN,"Oct 03, 2026",13,1295.0,0.51,0.44,40,2,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260150,Aarti Verma,9379567009,Female,Hindu,OBC,Pune,411068,en-IN,2026-09-30,36,95598.0,0.8,0.54,4,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260151,Deepa Sharma,9536034632,Female,Hindu,SC,Lucknow,226023,hi-IN,"Oct 09, 2026",70,1597.0,0.34,0.48,33,1,fraud call hai dispute raise kiya hai maine,False,1
+TEST-20260152,Vijay Nair,9834733769,Male,Hindu,SC,Delhi,110027,hi-IN,11-11-2026,40,14306.0,0.77,0.58,14,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260153,Sunita Nair,+91 92921 90069,Female,Muslim,OBC,Chennai,600048,ta-IN,"Oct 12, 2026",23,61280.0,0.26,0.93,10,4,,False,1
+TEST-20260154,Mohammad Kumar,9797939404,Male,Muslim,General,Pune,411012,en-IN,25/10/2026,58,2479.0,0.47,0.88,29,2,,False,1
+TEST-20260155,Naveen Mehta,919989046287,Male,Hindu,OBC,Madurai,625022,ta-IN,17-11-2026,74,49586.0,0.37,0.24,30,1,Promised to pay tomorrow,True,1
+TEST-20260156,Neha Joshi,+91 97845 28657,Female,Hindu,SC,Jaipur,302010,hi-IN,09/08/2026,23,38353.0,0.25,0.48,27,1,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260157,Vijay Deshmukh,919870428679,Male,Hindu,General,Mumbai,400012,en-IN,"Aug 30, 2026",73,5256.0,0.78,0.82,27,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260158,Naveen Iyer,94767-20633,Male,Hindu,General,Jaipur,302043,hi-IN,"Oct 10, 2026",50,3182.0,0.64,0.25,32,3,nahi dunga galat charges lagaye hai,False,0
+TEST-20260159,Gurpreet Patel,94565-69609,Male,Hindu,OBC,Mumbai,400051,en-IN,2026-08-28,53,4825.0,0.31,0.12,7,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260160,Kavitha Verma,919896095566,Female,Hindu,SC,Jaipur,302075,hi-IN,2026-11-13,44,18301.0,0.35,0.92,4,1,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260161,Harpreet Pandey,98633 40524,Male,Hindu,SC,Hyderabad,500009,en-IN,11-11-2026,97,31746.0,0.21,0.18,28,2,,False,0
+TEST-20260162,Aditya Khan,93081 04725,Male,Hindu,OBC,Pune,411007,en-IN,03-10-2026,15,138922.0,0.52,0.52,33,2,Will pay by 5th as soon as my salary is credited,False,0
+TEST-20260163,Geeta Sharma,92917 64006,Female,Hindu,OBC,Madurai,625032,ta-IN,2026-08-23,65,11550.0,0.79,0.22,37,0,pay panna mudiyathu wrongful charges,False,1
+TEST-20260164,Mohammad Deshmukh,95699-59549,Male,Hindu,OBC,Madurai,625079,ta-IN,09/09/2026,33,36340.0,0.28,0.38,26,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260165,Divya Gowda,9347979324,Female,Hindu,OBC,Bengaluru,560004,kn-IN,12-08-2026,30,869.0,0.44,0.77,25,0,salary 7th barutte nodi kanditha pay madtini,False,1
+TEST-20260166,Rahul Gowda,9327509722,Male,Muslim,General,Hubballi,580099,kn-IN,09/11/2026,105,51579.0,0.13,0.91,15,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260167,Simran Chavan,9387676333,Female,Hindu,OBC,Lucknow,226078,hi-IN,16/10/2026,67,7241.0,0.36,0.68,34,0,10 tarik ko salary aate hi link pe bhar dunga,False,1
+TEST-20260168,Amit Reddy,98072-62844,Male,Muslim,General,Jaipur,302002,hi-IN,03-09-2026,77,61867.0,0.63,0.29,16,2,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260169,Shreya Patel,9331581361,Female,Muslim,OBC,Bengaluru,560013,kn-IN,23/10/2026,12,10964.0,0.34,0.21,29,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260170,Imran Kaur,96664 58653,Male,Muslim,General,Mumbai,400040,en-IN,10-11-2026,73,55770.0,0.22,0.82,43,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260171,Venkatesh Iyer,95558-30321,Male,Hindu,OBC,Hyderabad,500066,en-IN,"Sep 26, 2026",9,83813.0,0.76,0.4,36,0,,False,1
+TEST-20260172,Pooja Mukherjee,9613452299,Female,Hindu,General,Hyderabad,500054,en-IN,2026-11-07,31,36780.0,0.74,0.67,45,0,Follow up required,False,1
+TEST-20260173,Shalini Iyer,919299423176,Female,Sikh,SC,Pune,411044,en-IN,"Nov 07, 2026",55,2140.0,0.17,0.74,3,0,,False,1
+TEST-20260174,Deepa Reddy,+91 95071 68450,Female,Hindu,ST,Madurai,625049,ta-IN,17-11-2026,10,99782.0,0.37,0.77,18,3,konjam kashtam sir half amount pay panren link anupunga,False,1
+TEST-20260175,Lakshmi Jain,9403754867,Female,Hindu,OBC,Chennai,600010,ta-IN,2026-08-24,5,116085.0,0.47,0.41,28,0,branch la already cash pay panniyachu check pannunga,False,1
+TEST-20260176,Zoya Kumar,+91 96239 36393,Female,Hindu,General,Mumbai,400078,en-IN,12-09-2026,11,7873.0,0.39,0.37,26,4,Promised to pay tomorrow,False,0
+TEST-20260177,Neha Gupta,95015-45320,Female,Muslim,OBC,Coimbatore,641023,ta-IN,16/11/2026,47,88408.0,0.31,0.19,16,1,branch la already cash pay panniyachu check pannunga,False,0
+TEST-20260178,Rohan Pandey,+91 94301 54904,Male,Hindu,General,Jaipur,302047,hi-IN,20-09-2026,27,2914.0,0.8,0.61,16,0,kal pakka pay kar dunga guarantee,False,1
+TEST-20260179,Lakshmi Gowda,96115 44744,Female,Hindu,ST,Jaipur,302022,hi-IN,14-08-2026,89,45542.0,0.17,0.36,40,0,fraud call hai dispute raise kiya hai maine,False,1
+TEST-20260180,Ali Kaur,9520827832,Male,Hindu,OBC,Chennai,600056,ta-IN,2026-08-20,59,2145.0,0.82,0.62,43,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260181,Rajesh Pandey,92807 86266,Male,Muslim,General,Mysuru,570058,kn-IN,"Aug 11, 2026",88,93528.0,0.3,0.33,24,0,Promised to pay tomorrow,False,1
+TEST-20260182,Ananya Sharma,+91 96398 15096,Female,Hindu,General,Hubballi,580094,kn-IN,31-08-2026,46,11604.0,0.51,0.91,44,0,kodolla tumba extra interest haktidira,False,1
+TEST-20260183,Ananya Reddy,94982-97656,Female,Hindu,General,Lucknow,226033,hi-IN,2026-08-10,19,2196.0,0.23,0.71,39,0,hospital me admit hu accident ho gaya tha 10 din baad baat karo,False,0
+TEST-20260184,Vijay Kaur,99441 94919,Male,Hindu,OBC,Lucknow,226013,hi-IN,"Oct 20, 2026",53,127360.0,0.56,0.67,1,4,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260185,Aarti Mehta,+91 91636 69196,Female,Hindu,OBC,Madurai,625012,ta-IN,2026-08-30,75,18374.0,0.75,0.37,25,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260186,Swati Chavan,94746 18391,Female,Hindu,OBC,Jaipur,302073,hi-IN,"Sep 24, 2026",77,32525.0,0.43,0.29,36,0,kal pakka pay kar dunga guarantee,False,1
+TEST-20260187,Shalini Bose,9687492101,Female,Hindu,General,Hubballi,580054,kn-IN,21/10/2026,76,6046.0,0.45,0.16,44,3,Follow up required,False,1
+TEST-20260188,Amit Sharma,9226079018,Male,Hindu,OBC,Hyderabad,500025,en-IN,03-10-2026,22,112968.0,0.93,0.59,7,0,"Disputing penal interest charges, will not pay until rectified",True,1
+TEST-20260189,Shalini Patel,95280 13995,Female,Hindu,OBC,Hubballi,580084,kn-IN,18/09/2026,26,851.0,0.47,0.82,33,1,hospital nalli iddini surgery aagide please thoda time bidi,False,1
+TEST-20260190,Shreya Jain,98187-87092,Female,Hindu,OBC,Chennai,600079,ta-IN,03-09-2026,46,2955.0,0.17,0.19,18,1,pay panna mudiyathu wrongful charges,False,1
+TEST-20260191,Zoya Bose,919293110620,Female,Hindu,SC,Coimbatore,641049,ta-IN,2026-11-18,100,11077.0,0.82,0.44,23,3,konjam kashtam sir half amount pay panren link anupunga,False,1
+TEST-20260192,Preeti Gowda,919861887142,Female,Hindu,General,Mysuru,570036,kn-IN,"Sep 30, 2026",86,1539.0,0.33,0.46,26,3,"Facing temporary liquidity shortage, please send partial settlement link",False,0
+TEST-20260193,Swati Bose,9368044818,Female,Hindu,OBC,Mumbai,400030,en-IN,05-09-2026,57,36789.0,0.55,0.14,41,0,Follow up required,False,1
+TEST-20260194,Aarti Singh,96496-25254,Female,Hindu,OBC,Mysuru,570050,kn-IN,2026-11-01,20,1736.0,0.62,0.5,12,0,Promised to pay tomorrow,False,1
+TEST-20260195,Aditya Pandey,+91 92998 20519,Male,Hindu,General,Mumbai,400034,en-IN,01-10-2026,46,127159.0,0.73,0.44,31,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260196,Venkatesh Khan,919843935622,Male,Hindu,OBC,Madurai,625009,ta-IN,2026-11-04,73,4860.0,0.61,0.37,33,0,hospital la admit aagi irukken surgery mudinjathum pesuren,False,0
+TEST-20260197,Divya Gowda,+91 96001 49578,Female,Hindu,OBC,Hubballi,580081,kn-IN,09/11/2026,40,3819.0,0.43,0.44,24,0,swalpa duddu ide half pay madtini link kalsi,False,1
+TEST-20260198,Naveen Gowda,95177-86477,Male,Jain,OBC,Madurai,625057,ta-IN,"Aug 08, 2026",96,7358.0,0.62,0.78,29,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260199,Aditya Kumar,99074 60766,Male,Hindu,General,Madurai,625075,ta-IN,2026-09-18,40,1967.0,0.14,0.59,43,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260200,Venkatesh Bose,919863789517,Male,Hindu,OBC,Bengaluru,560059,kn-IN,2026-09-21,89,32807.0,0.39,0.87,1,1,,False,0
+TEST-20260201,Chitra Jain,9289684793,Female,Hindu,General,Bengaluru,560037,kn-IN,"Aug 25, 2026",66,43415.0,0.52,0.11,37,0,Follow up required,False,1
+TEST-20260202,Sanjay Jain,919742765734,Male,Hindu,General,Pune,411051,en-IN,04/09/2026,10,23004.0,0.71,0.75,10,0,Follow up required,False,1
+TEST-20260203,Vijay Joshi,9364499042,Male,Hindu,SC,Bengaluru,560069,kn-IN,2026-11-13,62,46677.0,0.24,0.44,2,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260204,Mohammad Nair,+91 99506 52847,Male,Hindu,SC,Lucknow,226070,hi-IN,08-10-2026,62,76872.0,0.22,0.9,28,0,Follow up required,False,1
+TEST-20260205,Neha Gupta,9470650282,Female,Hindu,General,Lucknow,226048,hi-IN,18/09/2026,74,23706.0,0.67,0.91,29,0,10 tarik ko salary aate hi link pe bhar dunga,False,1
+TEST-20260206,Chitra Reddy,9654026162,Female,Hindu,OBC,Chennai,600016,ta-IN,12-11-2026,8,73100.0,0.74,0.94,33,0,Promised to pay tomorrow,False,1
+TEST-20260207,Fatima Joshi,919551131013,Female,Sikh,OBC,Jaipur,302058,hi-IN,"Oct 14, 2026",43,10583.0,0.26,0.74,21,3,salry 7th ko credit hogi pakka transfer kar dunga,False,0
+TEST-20260208,Amit Ahmed,9267848817,Male,Sikh,OBC,Jaipur,302008,hi-IN,26-10-2026,57,6989.0,0.47,0.57,32,2,"Salary expected on 8th, will clear full EMI then",True,1
+TEST-20260209,Venkatesh Mishra,9779078617,Male,Hindu,General,Coimbatore,641067,ta-IN,"Aug 20, 2026",61,29827.0,0.43,0.9,20,1,branch la already cash pay panniyachu check pannunga,False,0
+TEST-20260210,Meenakshi Pandey,91471 28235,Female,Hindu,SC,Bengaluru,560045,kn-IN,"Oct 31, 2026",97,123806.0,0.45,0.12,0,0,Promised to pay tomorrow,False,1
+TEST-20260211,Preeti Gowda,97768-78949,Female,Muslim,SC,Hyderabad,500004,en-IN,30/08/2026,79,54301.0,0.3,0.18,41,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260212,Mohammad Kumar,99852 05467,Male,Hindu,SC,Hubballi,580087,kn-IN,"Nov 09, 2026",81,103074.0,0.56,0.7,26,1,naale kanditha kodtini,False,1
+TEST-20260213,Pooja Jain,92763 36522,Female,Hindu,OBC,Bengaluru,560046,kn-IN,"Oct 10, 2026",98,2992.0,0.65,0.59,9,2,kodolla tumba extra interest haktidira,False,1
+TEST-20260214,Neha Singh,95688 27791,Female,Hindu,ST,Pune,411052,en-IN,"Oct 29, 2026",89,121420.0,0.18,0.92,45,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260215,Shreya Sharma,+91 94555 52721,Female,Hindu,SC,Lucknow,226001,hi-IN,2026-08-15,96,123939.0,0.63,0.35,35,2,father ICU me hai critical condition hai please abhi call mat karo,False,1
+TEST-20260216,Ajay Mukherjee,9604091946,Male,Hindu,OBC,Lucknow,226028,hi-IN,2026-11-09,66,41302.0,0.35,0.13,27,2,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260217,Shalini Verma,92839-47886,Female,Hindu,General,Coimbatore,641070,ta-IN,04-10-2026,11,11783.0,0.53,0.16,36,3,hospital la admit aagi irukken surgery mudinjathum pesuren,False,0
+TEST-20260218,Sanjay Mehta,99878 42046,Male,Hindu,OBC,Chennai,600043,ta-IN,10/08/2026,81,138102.0,0.12,0.49,9,0,naalaiki kandippa pay panren,False,1
+TEST-20260219,Shalini Chavan,9361188928,Female,Hindu,SC,Mysuru,570015,kn-IN,14/09/2026,30,51298.0,0.83,0.53,15,1,swalpa duddu ide half pay madtini link kalsi,True,1
+TEST-20260220,Neha Chavan,9864397537,Female,Hindu,General,Mysuru,570072,kn-IN,09/11/2026,63,130170.0,0.18,0.85,6,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260221,Sunita Verma,+91 95397 91191,Female,Hindu,SC,Lucknow,226041,hi-IN,09-10-2026,19,600.0,0.33,0.33,14,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260222,Shalini Joshi,+91 99720 81213,Female,Hindu,OBC,Delhi,110003,hi-IN,19-09-2026,90,6155.0,0.26,0.36,42,1,Promised to pay tomorrow,False,1
+TEST-20260223,Ritu Yadav,919685785131,Female,Hindu,OBC,Hyderabad,500028,en-IN,"Sep 17, 2026",58,2499.0,0.37,0.11,22,4,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260224,Harpreet Sharma,+91 95739 06770,Male,Jain,OBC,Chennai,600076,ta-IN,"Aug 05, 2026",29,16791.0,0.61,0.53,33,2,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260225,Rajesh Iyer,9360365380,Male,Hindu,General,Pune,411026,en-IN,20-10-2026,76,9346.0,0.42,0.11,26,0,,False,1
+TEST-20260226,Imran Mishra,919132555059,Male,Hindu,OBC,Delhi,110080,hi-IN,11-10-2026,49,110604.0,0.14,0.11,36,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260227,Rahul Iyer,919190562974,Male,Hindu,OBC,Mysuru,570002,kn-IN,2026-08-10,72,109427.0,0.62,0.27,36,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260228,Fatima Ahmed,98975 82773,Female,Hindu,OBC,Lucknow,226027,hi-IN,"Sep 20, 2026",87,7900.0,0.18,0.76,21,2,nahi dunga galat charges lagaye hai,False,0
+TEST-20260229,Mohammad Deshmukh,96874-49134,Male,Hindu,General,Mumbai,400026,en-IN,06/09/2026,71,17344.0,0.49,0.23,36,2,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260230,Vikram Gupta,9505305800,Male,Muslim,OBC,Jaipur,302045,hi-IN,"Sep 09, 2026",66,608.0,0.6,0.18,5,1,Will pay by 5th as soon as my salary is credited,False,0
+TEST-20260231,Rekha Singh,+91 91709 83464,Female,Hindu,OBC,Jaipur,302027,hi-IN,2026-11-12,5,107208.0,0.52,0.31,12,1,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260232,Pooja Verma,919408360903,Female,Hindu,OBC,Mumbai,400068,en-IN,15/08/2026,23,25516.0,0.13,0.8,15,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260233,Zoya Nair,919999556660,Female,Hindu,General,Madurai,625009,ta-IN,"Sep 29, 2026",47,62968.0,0.61,0.17,13,0,Follow up required,False,1
+TEST-20260234,Amina Nair,9517669451,Female,Hindu,OBC,Coimbatore,641057,ta-IN,30-10-2026,5,14204.0,0.53,0.6,43,3,,True,1
+TEST-20260235,Arun Chavan,919984769755,Male,Hindu,SC,Bengaluru,560065,kn-IN,12-09-2026,14,51583.0,0.59,0.57,42,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260236,Meenakshi Jain,919222170762,Female,Hindu,OBC,Delhi,110072,hi-IN,2026-09-15,95,833.0,0.24,0.74,5,0,already branch counter pe jama kar diya tha check karo,False,0
+TEST-20260237,Rohan Singh,92769-54755,Male,Hindu,General,Mumbai,400078,en-IN,"Oct 19, 2026",50,9789.0,0.15,0.55,1,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260238,Geeta Mehta,93288-01601,Female,Hindu,OBC,Mysuru,570034,kn-IN,2026-09-09,57,8261.0,0.34,0.42,18,0,salary 7th barutte nodi kanditha pay madtini,False,1
+TEST-20260239,Geeta Mehta,919709243827,Female,Hindu,General,Delhi,110079,hi-IN,"Oct 13, 2026",100,106640.0,0.24,0.49,11,2,already branch counter pe jama kar diya tha check karo,False,0
+TEST-20260240,Geeta Patel,919200295288,Female,Hindu,General,Pune,411072,en-IN,2026-11-01,84,122409.0,0.43,0.13,19,2,"Facing temporary liquidity shortage, please send partial settlement link",False,0
+TEST-20260241,Simran Das,919272536116,Female,Hindu,OBC,Mumbai,400058,en-IN,"Oct 06, 2026",24,1505.0,0.48,0.74,19,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260242,Ananya Pandey,91904-03222,Female,Hindu,OBC,Lucknow,226063,hi-IN,10/10/2026,45,31467.0,0.54,0.38,31,0,,False,1
+TEST-20260243,Kavya Chavan,919306735336,Female,Hindu,General,Lucknow,226051,hi-IN,03/09/2026,27,23733.0,0.85,0.76,14,1,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260244,Imran Mishra,919361661193,Male,Hindu,General,Jaipur,302051,hi-IN,15/09/2026,13,11962.0,0.76,0.93,32,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260245,Ali Kumar,9638674005,Male,Hindu,OBC,Delhi,110007,hi-IN,2026-10-02,72,20121.0,0.68,0.78,16,0,fraud call hai dispute raise kiya hai maine,False,1
+TEST-20260246,Vikram Kaur,97998 23913,Male,Hindu,OBC,Jaipur,302031,hi-IN,17-09-2026,22,39411.0,0.21,0.92,23,0,10 tarik ko salary aate hi link pe bhar dunga,False,1
+TEST-20260247,Lakshmi Mukherjee,+91 91538 37808,Female,Muslim,General,Delhi,110073,hi-IN,"Nov 20, 2026",78,106671.0,0.76,0.8,20,0,,False,1
+TEST-20260248,Divya Joshi,94405-36539,Female,Hindu,OBC,Mysuru,570007,kn-IN,03-11-2026,6,9160.0,0.87,0.24,20,0,kodolla tumba extra interest haktidira,False,1
+TEST-20260249,Ritu Chavan,+91 92952 14173,Female,Hindu,SC,Chennai,600038,ta-IN,2026-11-13,1,42518.0,0.61,0.23,27,1,naalaiki kandippa pay panren,False,1
+TEST-20260250,Sanjay Verma,919450269854,Male,Sikh,OBC,Mumbai,400081,en-IN,24/10/2026,49,31700.0,0.88,0.17,11,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260251,Swati Yadav,91874-06384,Female,Hindu,General,Lucknow,226055,hi-IN,2026-10-17,100,1626.0,0.63,0.11,27,2,salary 5th ko aayega tab pay kar dunga,False,0
+TEST-20260252,Fatima Mukherjee,+91 95773 23842,Female,Hindu,OBC,Hyderabad,500070,en-IN,08/09/2026,12,1597.0,0.34,0.75,11,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260253,Ananya Pandey,+91 98070 05417,Female,Sikh,SC,Hubballi,580072,kn-IN,05-11-2026,66,17859.0,0.23,0.29,18,3,"Salary expected on 8th, will clear full EMI then",True,0
+TEST-20260254,Amina Mishra,94173-43477,Female,Hindu,General,Pune,411068,en-IN,"Aug 08, 2026",23,9415.0,0.66,0.49,14,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260255,Chitra Joshi,99389 28055,Female,Hindu,General,Delhi,110078,hi-IN,2026-08-24,102,34529.0,0.36,0.33,24,4,nahi dunga galat charges lagaye hai,False,0
+TEST-20260256,Venkatesh Patel,919311563288,Male,Hindu,General,Hyderabad,500064,en-IN,2026-11-13,103,5271.0,0.17,0.64,20,1,,False,1
+TEST-20260257,Prashant Joshi,9458663905,Male,Hindu,OBC,Chennai,600054,ta-IN,21/09/2026,32,63640.0,0.61,0.75,0,0,hospital la admit aagi irukken surgery mudinjathum pesuren,False,0
+TEST-20260258,Ananya Kumar,+91 91241 43140,Female,Hindu,OBC,Hubballi,580048,kn-IN,"Nov 19, 2026",15,48017.0,0.15,0.74,21,0,branch nalli duddu kottidini receipt ide,False,1
+TEST-20260259,Aditya Kaur,919792764992,Male,Hindu,OBC,Chennai,600006,ta-IN,27-08-2026,10,10079.0,0.47,0.81,12,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260260,Zoya Mehta,94564 45988,Female,Hindu,ST,Mumbai,400058,en-IN,11-10-2026,89,110294.0,0.6,0.95,44,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260261,Manish Iyer,9242298526,Male,Hindu,General,Chennai,600036,ta-IN,22-09-2026,57,9451.0,0.29,0.83,41,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260262,Kavya Das,+91 96301 39243,Female,Hindu,General,Hubballi,580054,kn-IN,05/09/2026,8,2072.0,0.86,0.42,42,0,naale kanditha kodtini,True,1
+TEST-20260263,Divya Kumar,919114751477,Female,Hindu,General,Jaipur,302005,hi-IN,2026-10-12,91,17175.0,0.25,0.64,40,3,branch mein de diya cash receipt hai mere paas,False,0
+TEST-20260264,Naveen Khan,92349-23438,Male,Hindu,SC,Mysuru,570025,kn-IN,17-10-2026,63,93615.0,0.63,0.5,18,1,sambala 5th baratte aaga full pay madtini,False,1
+TEST-20260265,Aditya Gupta,919501356836,Male,Hindu,OBC,Pune,411048,en-IN,24/09/2026,49,2115.0,0.64,0.15,5,4,"Salary expected on 8th, will clear full EMI then",False,0
+TEST-20260266,Arun Sharma,98873-86620,Male,Hindu,SC,Pune,411060,en-IN,"Sep 12, 2026",32,574.0,0.39,0.92,29,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260267,Neha Khan,919584145411,Female,Muslim,OBC,Hyderabad,500077,en-IN,23/08/2026,45,4313.0,0.18,0.72,28,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260268,Aditya Sharma,95682-53083,Male,Muslim,SC,Hubballi,580040,kn-IN,05/10/2026,96,47992.0,0.93,0.75,12,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260269,Sunita Mukherjee,+91 96070 10813,Female,Hindu,General,Hyderabad,500027,en-IN,15-08-2026,83,25012.0,0.77,0.65,17,0,"Already deposited at bank branch 2 days ago, check counter ledger",True,0
+TEST-20260270,Imran Patel,+91 99993 19186,Male,Muslim,SC,Bengaluru,560035,kn-IN,"Sep 17, 2026",65,2874.0,0.46,0.53,42,0,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260271,Sunita Singh,919583475115,Female,Hindu,OBC,Mumbai,400056,en-IN,"Sep 01, 2026",16,87719.0,0.26,0.27,41,0,,True,1
+TEST-20260272,Amit Mukherjee,9465056483,Male,Hindu,General,Delhi,110057,hi-IN,"Aug 28, 2026",10,46751.0,0.29,0.6,5,1,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260273,Arun Das,+91 95876 36636,Male,Hindu,SC,Chennai,600053,ta-IN,2026-09-28,18,47206.0,0.11,0.85,10,0,Follow up required,False,1
+TEST-20260274,Imran Nair,9154693537,Male,Muslim,OBC,Hyderabad,500080,en-IN,18-09-2026,105,7001.0,0.31,0.25,41,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260275,Rahul Deshmukh,93249-70256,Male,Hindu,SC,Mumbai,400018,en-IN,"Oct 07, 2026",99,53571.0,0.58,0.47,16,1,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260276,Lakshmi Gupta,92014 71150,Female,Hindu,OBC,Coimbatore,641005,ta-IN,"Sep 10, 2026",13,1106.0,0.27,0.21,4,0,naalaiki kandippa pay panren,False,1
+TEST-20260277,Shreya Iyer,97095-42040,Female,Christian,OBC,Mumbai,400008,en-IN,14-08-2026,74,138412.0,0.58,0.84,0,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260278,Sanjay Jain,+91 91888 89743,Male,Muslim,SC,Delhi,110011,hi-IN,"Aug 30, 2026",95,1558.0,0.82,0.82,22,0,Follow up required,True,1
+TEST-20260279,Venkatesh Iyer,9904423613,Male,Hindu,General,Chennai,600042,ta-IN,"Aug 30, 2026",6,55650.0,0.64,0.82,33,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260280,Vikram Joshi,+91 97850 47078,Male,Hindu,OBC,Coimbatore,641081,ta-IN,2026-10-26,101,3107.0,0.9,0.37,7,3,Will pay by 5th as soon as my salary is credited,True,0
+TEST-20260281,Deepa Jain,95044 25700,Female,Jain,SC,Chennai,600027,ta-IN,27-09-2026,32,2264.0,0.41,0.34,20,0,,False,1
+TEST-20260282,Sanjay Mishra,94483-10513,Male,Hindu,SC,Coimbatore,641011,ta-IN,2026-09-17,97,103712.0,0.12,0.29,34,1,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260283,Divya Sharma,99145 65540,Female,Sikh,SC,Mysuru,570002,kn-IN,2026-11-06,74,1335.0,0.2,0.63,32,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260284,Venkatesh Mishra,9783684698,Male,Hindu,General,Mumbai,400072,en-IN,2026-09-24,78,9897.0,0.81,0.89,45,2,Follow up required,False,1
+TEST-20260285,Meenakshi Patel,95074-91471,Female,Hindu,ST,Hyderabad,500054,en-IN,2026-11-10,7,33024.0,0.22,0.88,8,0,Promised to pay tomorrow,False,1
+TEST-20260286,Geeta Reddy,98322-96643,Female,Hindu,OBC,Coimbatore,641042,ta-IN,17-09-2026,63,81175.0,0.34,0.72,41,4,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260287,Swati Chavan,+91 97734 19757,Female,Hindu,OBC,Hyderabad,500044,en-IN,2026-10-20,11,11723.0,0.88,0.61,11,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260288,Vikram Das,96014-19383,Male,Sikh,General,Jaipur,302012,hi-IN,2026-11-20,61,2962.0,0.15,0.12,15,2,job change hua hai thoda financial issue hai partial payment link bhejo,False,0
+TEST-20260289,Ritu Khan,9823751732,Female,Hindu,OBC,Lucknow,226018,hi-IN,28-08-2026,69,9622.0,0.91,0.18,44,0,,False,1
+TEST-20260290,Fatima Gupta,919614624181,Female,Hindu,OBC,Chennai,600026,ta-IN,2026-10-04,27,88058.0,0.35,0.56,44,0,Promised to pay tomorrow,False,1
+TEST-20260291,Preeti Iyer,+91 93676 97848,Female,Hindu,General,Madurai,625025,ta-IN,2026-08-10,100,9896.0,0.94,0.38,36,3,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260292,Amit Gupta,919625043001,Male,Hindu,OBC,Mysuru,570061,kn-IN,27/08/2026,2,3173.0,0.17,0.16,0,2,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260293,Shalini Mehta,+91 98033 18490,Female,Muslim,OBC,Coimbatore,641055,ta-IN,31-08-2026,63,7042.0,0.46,0.11,32,2,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260294,Amina Yadav,+91 98508 41652,Female,Muslim,General,Hyderabad,500036,en-IN,2026-10-24,24,1324.0,0.9,0.72,30,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260295,Ananya Singh,919250024753,Female,Hindu,OBC,Delhi,110013,hi-IN,2026-10-02,87,14346.0,0.37,0.47,5,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260296,Ritu Mishra,919988193854,Female,Hindu,General,Jaipur,302060,hi-IN,22/10/2026,3,28324.0,0.36,0.33,17,2,abhi paise kam hai aadha abhi de sakta hu baki next month,False,1
+TEST-20260297,Gurpreet Ahmed,92683 47165,Male,Hindu,OBC,Hubballi,580034,kn-IN,02/11/2026,43,2945.0,0.66,0.11,40,0,salary 7th barutte nodi kanditha pay madtini,False,1
+TEST-20260298,Simran Bose,9715620982,Female,Hindu,General,Madurai,625058,ta-IN,2026-08-10,2,112089.0,0.86,0.75,39,0,Promised to pay tomorrow,False,1
+TEST-20260299,Anand Joshi,9456767522,Male,Hindu,OBC,Pune,411074,en-IN,14/10/2026,92,39474.0,0.73,0.75,31,2,Promised to pay tomorrow,False,1
+TEST-20260300,Vijay Gupta,91934-73490,Male,Sikh,OBC,Bengaluru,560057,kn-IN,2026-10-30,46,137131.0,0.49,0.88,17,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260301,Simran Joshi,919111864027,Female,Muslim,OBC,Lucknow,226010,hi-IN,2026-09-21,35,52460.0,0.19,0.5,16,0,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260302,Kavya Jain,9225595452,Female,Muslim,OBC,Mumbai,400080,en-IN,2026-08-10,8,4076.0,0.13,0.4,26,3,,True,0
+TEST-20260303,Sanjay Ahmed,+91 93349 76989,Male,Hindu,ST,Bengaluru,560039,kn-IN,07-09-2026,7,8472.0,0.43,0.55,45,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260304,Deepa Singh,919881807828,Female,Hindu,SC,Lucknow,226011,hi-IN,2026-11-01,77,750.0,0.63,0.8,4,2,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260305,Vikram Mishra,95485-07505,Male,Sikh,OBC,Delhi,110017,hi-IN,10/09/2026,105,110465.0,0.34,0.48,20,0,,False,1
+TEST-20260306,Rajesh Jain,94279-18287,Male,Hindu,OBC,Mysuru,570031,kn-IN,"Nov 12, 2026",52,119334.0,0.81,0.85,37,2,,False,1
+TEST-20260307,Simran Pandey,92317-02526,Female,Hindu,OBC,Mumbai,400016,en-IN,"Sep 04, 2026",25,4347.0,0.7,0.53,14,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260308,Amina Kumar,919753747484,Female,Hindu,OBC,Jaipur,302049,hi-IN,23/09/2026,17,128911.0,0.5,0.77,11,4,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260309,Karthik Gowda,91609-63448,Male,Hindu,OBC,Mumbai,400033,en-IN,"Nov 04, 2026",74,120986.0,0.3,0.57,12,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260310,Amina Reddy,919988883075,Female,Hindu,OBC,Hubballi,580041,kn-IN,08/11/2026,1,1629.0,0.72,0.32,33,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260311,Chitra Ahmed,99118 24743,Female,Hindu,OBC,Bengaluru,560031,kn-IN,"Oct 31, 2026",5,1375.0,0.46,0.64,4,0,branch nalli duddu kottidini receipt ide,False,1
+TEST-20260312,Sanjay Mukherjee,9684647553,Male,Hindu,SC,Hubballi,580057,kn-IN,2026-11-01,1,2803.0,0.42,0.22,8,2,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260313,Divya Ahmed,+91 92049 87961,Female,Hindu,ST,Bengaluru,560077,kn-IN,"Sep 19, 2026",43,2418.0,0.13,0.19,31,1,Promised to pay tomorrow,False,1
+TEST-20260314,Priya Das,919264460774,Female,Christian,ST,Hyderabad,500019,en-IN,16-09-2026,43,41952.0,0.93,0.51,2,1,,False,1
+TEST-20260315,Preeti Sharma,96310 67098,Female,Hindu,ST,Coimbatore,641023,ta-IN,"Nov 14, 2026",52,2227.0,0.86,0.2,10,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260316,Kavya Mishra,+91 98870 27782,Female,Hindu,General,Hyderabad,500031,en-IN,"Sep 18, 2026",58,14153.0,0.53,0.84,6,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260317,Imran Joshi,9890985899,Male,Hindu,OBC,Mysuru,570037,kn-IN,"Aug 18, 2026",99,6842.0,0.43,0.43,43,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260318,Rahul Gowda,9356469124,Male,Hindu,SC,Coimbatore,641037,ta-IN,"Aug 17, 2026",89,89394.0,0.54,0.92,45,1,konjam kashtam sir half amount pay panren link anupunga,False,1
+TEST-20260319,Lakshmi Mukherjee,+91 94826 97358,Female,Hindu,General,Mysuru,570015,kn-IN,2026-09-23,59,2956.0,0.94,0.61,10,1,branch nalli duddu kottidini receipt ide,False,1
+TEST-20260320,Meenakshi Kaur,919732937892,Female,Hindu,General,Mysuru,570045,kn-IN,14-09-2026,7,2922.0,0.6,0.69,26,4,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260321,Vikram Joshi,919954135242,Male,Hindu,OBC,Hyderabad,500034,en-IN,22/10/2026,39,7464.0,0.81,0.19,17,3,Promised to pay tomorrow,False,1
+TEST-20260322,Deepa Kumar,919163543538,Female,Jain,General,Jaipur,302031,hi-IN,30/08/2026,2,82261.0,0.67,0.65,18,0,branch mein de diya cash receipt hai mere paas,False,0
+TEST-20260323,Suresh Gupta,+91 91856 77476,Male,Hindu,General,Jaipur,302035,hi-IN,2026-08-03,93,2457.0,0.57,0.43,23,1,Promised to pay tomorrow,False,1
+TEST-20260324,Aditya Kumar,919233772927,Male,Christian,General,Hubballi,580062,kn-IN,"Sep 17, 2026",16,101548.0,0.16,0.27,43,1,naale kanditha kodtini,False,1
+TEST-20260325,Ananya Yadav,919415033263,Female,Hindu,OBC,Mysuru,570074,kn-IN,18-10-2026,22,94615.0,0.56,0.34,4,1,sambala 5th baratte aaga full pay madtini,False,1
+TEST-20260326,Divya Gowda,9845864317,Female,Hindu,General,Pune,411044,en-IN,22/09/2026,42,27525.0,0.92,0.62,37,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260327,Naveen Deshmukh,96998-58849,Male,Hindu,OBC,Mysuru,570018,kn-IN,2026-11-20,28,25969.0,0.21,0.33,25,1,kodolla tumba extra interest haktidira,False,1
+TEST-20260328,Shalini Jain,919809210116,Female,Hindu,General,Mysuru,570064,kn-IN,2026-11-06,55,14265.0,0.45,0.67,24,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260329,Priya Yadav,+91 99274 59192,Female,Hindu,OBC,Hyderabad,500025,en-IN,"Oct 27, 2026",87,110527.0,0.43,0.13,39,3,"Facing temporary liquidity shortage, please send partial settlement link",False,0
+TEST-20260330,Prashant Iyer,93225 05278,Male,Hindu,OBC,Mysuru,570006,kn-IN,01-09-2026,72,125484.0,0.91,0.34,29,0,Follow up required,False,1
+TEST-20260331,Chitra Singh,99915 69178,Female,Hindu,General,Mysuru,570032,kn-IN,"Aug 10, 2026",4,1536.0,0.93,0.77,26,1,hospital nalli iddini surgery aagide please thoda time bidi,False,1
+TEST-20260332,Swati Mukherjee,95631-62613,Female,Muslim,ST,Delhi,110042,hi-IN,15/08/2026,26,39310.0,0.73,0.51,44,0,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260333,Karthik Mehta,9262097829,Male,Hindu,OBC,Madurai,625003,ta-IN,19-11-2026,24,8577.0,0.65,0.24,43,0,pay panna mudiyathu wrongful charges,False,1
+TEST-20260334,Kavya Khan,+91 99367 08069,Female,Hindu,General,Hubballi,580084,kn-IN,2026-11-20,38,7975.0,0.4,0.83,33,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260335,Aarti Iyer,98876 37489,Female,Hindu,General,Mumbai,400041,en-IN,01/09/2026,22,4541.0,0.15,0.57,14,0,Promised to pay tomorrow,True,1
+TEST-20260336,Amit Iyer,+91 95960 46202,Male,Hindu,General,Pune,411022,en-IN,22/08/2026,13,30473.0,0.91,0.12,32,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260337,Geeta Joshi,919482496043,Female,Hindu,SC,Coimbatore,641009,ta-IN,21-10-2026,65,5532.0,0.21,0.32,13,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260338,Ritu Gupta,9753938932,Female,Hindu,General,Jaipur,302033,hi-IN,04/09/2026,76,82108.0,0.4,0.61,22,0,branch mein de diya cash receipt hai mere paas,False,0
+TEST-20260339,Swati Gowda,99593-56176,Female,Hindu,OBC,Coimbatore,641081,ta-IN,29/09/2026,30,532.0,0.2,0.34,45,1,naalaiki kandippa pay panren,False,1
+TEST-20260340,Kavitha Das,92368-87751,Female,Hindu,OBC,Bengaluru,560016,kn-IN,15/08/2026,74,41999.0,0.44,0.95,33,0,"Salary expected on 8th, will clear full EMI then",True,1
+TEST-20260341,Priya Mehta,9499067756,Female,Muslim,General,Chennai,600011,ta-IN,2026-08-27,55,135205.0,0.16,0.51,44,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260342,Lakshmi Nair,97832-46773,Female,Hindu,OBC,Bengaluru,560075,kn-IN,2026-09-01,90,14600.0,0.3,0.33,12,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260343,Ali Singh,93004-50407,Male,Muslim,General,Mumbai,400068,en-IN,2026-11-13,50,5351.0,0.64,0.85,8,0,,False,1
+TEST-20260344,Ramesh Pandey,95728-48338,Male,Hindu,OBC,Hubballi,580041,kn-IN,"Oct 08, 2026",16,6825.0,0.32,0.61,3,0,branch nalli duddu kottidini receipt ide,False,1
+TEST-20260345,Aarti Jain,919681060818,Female,Muslim,OBC,Mumbai,400040,en-IN,"Oct 02, 2026",75,50688.0,0.19,0.23,7,3,"Disputing penal interest charges, will not pay until rectified",False,0
+TEST-20260346,Rohan Yadav,9609968336,Male,Hindu,General,Delhi,110016,hi-IN,09/11/2026,100,2220.0,0.9,0.65,27,0,salary 5th ko aayega tab pay kar dunga,False,0
+TEST-20260347,Rajesh Kumar,+91 94810 94624,Male,Hindu,OBC,Madurai,625030,ta-IN,17/10/2026,64,13549.0,0.3,0.57,6,4,Will pay by 5th as soon as my salary is credited,False,0
+TEST-20260348,Anand Das,99805-57096,Male,Hindu,General,Coimbatore,641048,ta-IN,2026-08-05,72,11098.0,0.28,0.5,30,3,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260349,Ali Reddy,+91 91285 40417,Male,Hindu,SC,Madurai,625029,ta-IN,04/10/2026,81,2444.0,0.7,0.45,16,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260350,Deepa Das,+91 96070 34944,Female,Hindu,General,Mumbai,400078,en-IN,05-10-2026,46,1919.0,0.57,0.51,38,2,Promised to pay tomorrow,True,1
+TEST-20260351,Manish Verma,919881870835,Male,Hindu,OBC,Pune,411077,en-IN,16-10-2026,78,1428.0,0.21,0.38,38,0,Follow up required,False,1
+TEST-20260352,Amit Mukherjee,97647 33991,Male,Christian,SC,Coimbatore,641001,ta-IN,26-10-2026,64,123575.0,0.46,0.84,9,0,konjam kashtam sir half amount pay panren link anupunga,False,1
+TEST-20260353,Aarti Verma,93898-98725,Female,Hindu,OBC,Lucknow,226015,hi-IN,"Oct 29, 2026",5,27978.0,0.91,0.6,35,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260354,Deepa Mehta,93121-12120,Female,Hindu,OBC,Bengaluru,560056,kn-IN,29/08/2026,97,57408.0,0.59,0.14,7,1,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260355,Ali Kaur,95175-70148,Male,Hindu,OBC,Chennai,600080,ta-IN,25-09-2026,32,55999.0,0.85,0.16,41,0,pay panna mudiyathu wrongful charges,False,1
+TEST-20260356,Zoya Chavan,919172151572,Female,Hindu,General,Mumbai,400002,en-IN,25-10-2026,91,40223.0,0.35,0.58,16,0,"Disputing penal interest charges, will not pay until rectified",True,1
+TEST-20260357,Shalini Jain,919105704972,Female,Muslim,SC,Hubballi,580024,kn-IN,12-10-2026,88,4826.0,0.35,0.14,40,0,kodolla tumba extra interest haktidira,True,0
+TEST-20260358,Kavitha Singh,98421 68168,Female,Hindu,OBC,Bengaluru,560043,kn-IN,27-09-2026,71,98618.0,0.53,0.87,36,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260359,Karthik Iyer,919771201401,Male,Hindu,General,Mysuru,570015,kn-IN,04/09/2026,83,2849.0,0.19,0.61,13,0,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260360,Simran Nair,+91 94539 41184,Female,Hindu,OBC,Hyderabad,500064,en-IN,17/10/2026,16,92479.0,0.52,0.85,6,2,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260361,Deepak Chavan,91209 53587,Male,Hindu,SC,Jaipur,302031,hi-IN,"Sep 16, 2026",59,49323.0,0.51,0.57,15,1,abhi paise kam hai aadha abhi de sakta hu baki next month,False,1
+TEST-20260362,Shalini Kaur,919802756687,Female,Hindu,OBC,Pune,411002,en-IN,"Nov 11, 2026",33,2211.0,0.33,0.66,9,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260363,Suresh Mehta,919241579287,Male,Hindu,General,Coimbatore,641029,ta-IN,"Aug 24, 2026",98,4271.0,0.72,0.54,18,3,Promised to pay tomorrow,False,0
+TEST-20260364,Ananya Ahmed,919653164807,Female,Hindu,General,Bengaluru,560043,kn-IN,2026-09-18,36,132669.0,0.4,0.79,32,0,salary 7th barutte nodi kanditha pay madtini,True,1
+TEST-20260365,Fatima Singh,+91 96257 66827,Female,Hindu,General,Bengaluru,560052,kn-IN,"Oct 29, 2026",65,30168.0,0.55,0.11,27,1,Promised to pay tomorrow,False,1
+TEST-20260366,Amina Chavan,99539-12783,Female,Hindu,General,Chennai,600057,ta-IN,28-08-2026,95,11414.0,0.62,0.11,19,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260367,Ananya Khan,93304 91402,Female,Muslim,OBC,Pune,411069,en-IN,"Sep 17, 2026",64,73907.0,0.66,0.57,27,2,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260368,Arun Jain,9443668265,Male,Hindu,General,Coimbatore,641011,ta-IN,"Nov 19, 2026",12,13702.0,0.44,0.15,28,1,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260369,Shalini Kumar,+91 98913 06446,Female,Hindu,SC,Coimbatore,641065,ta-IN,2026-10-11,35,102608.0,0.39,0.75,30,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260370,Sunita Mukherjee,91301 13439,Female,Hindu,General,Coimbatore,641021,ta-IN,2026-08-09,24,14594.0,0.44,0.2,36,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260371,Arun Mishra,919838758392,Male,Hindu,SC,Pune,411033,en-IN,06-11-2026,3,1140.0,0.72,0.65,32,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260372,Geeta Ahmed,99004 73220,Female,Hindu,OBC,Pune,411064,en-IN,18/10/2026,81,54071.0,0.71,0.24,20,1,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260373,Ali Mishra,95247-34916,Male,Sikh,OBC,Lucknow,226025,hi-IN,04-10-2026,1,3546.0,0.44,0.38,26,2,kal pakka pay kar dunga guarantee,False,1
+TEST-20260374,Ali Sharma,91019 35905,Male,Hindu,OBC,Bengaluru,560080,kn-IN,10-09-2026,68,42011.0,0.75,0.87,21,3,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260375,Divya Sharma,9323152848,Female,Hindu,General,Chennai,600060,ta-IN,"Oct 01, 2026",54,2998.0,0.72,0.32,25,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260376,Geeta Patel,9157028841,Female,Hindu,OBC,Hubballi,580084,kn-IN,"Aug 27, 2026",96,116716.0,0.25,0.35,34,1,kodolla tumba extra interest haktidira,False,1
+TEST-20260377,Vikram Kumar,+91 98266 22608,Male,Hindu,General,Hyderabad,500079,en-IN,"Oct 05, 2026",50,52472.0,0.28,0.43,1,0,Promised to pay tomorrow,False,1
+TEST-20260378,Anand Chavan,9528737336,Male,Hindu,OBC,Jaipur,302068,hi-IN,2026-08-22,93,8757.0,0.63,0.6,30,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,0
+TEST-20260379,Mohammad Patel,91665-19638,Male,Hindu,ST,Jaipur,302040,hi-IN,2026-08-26,47,14183.0,0.45,0.79,38,2,"Already deposited at bank branch 2 days ago, check counter ledger",True,1
+TEST-20260380,Aditya Kaur,92167-58968,Male,Hindu,OBC,Madurai,625015,ta-IN,2026-09-17,93,4548.0,0.41,0.65,9,0,,False,1
+TEST-20260381,Ananya Reddy,97786-11692,Female,Hindu,OBC,Hubballi,580023,kn-IN,27/10/2026,13,113827.0,0.46,0.86,0,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260382,Deepak Mukherjee,+91 91274 15209,Male,Hindu,General,Hubballi,580077,kn-IN,"Oct 22, 2026",93,14771.0,0.53,0.93,6,3,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260383,Divya Iyer,9777900261,Female,Hindu,SC,Pune,411059,en-IN,25-10-2026,80,24273.0,0.47,0.69,20,0,,False,1
+TEST-20260384,Pooja Mehta,97737 46808,Female,Hindu,General,Hubballi,580049,kn-IN,2026-09-22,75,727.0,0.63,0.28,11,3,,False,1
+TEST-20260385,Swati Das,9537507457,Female,Hindu,SC,Jaipur,302018,hi-IN,2026-09-04,44,1093.0,0.57,0.49,0,3,branch mein de diya cash receipt hai mere paas,False,0
+TEST-20260386,Shreya Patel,919856074970,Female,Hindu,General,Jaipur,302075,hi-IN,"Aug 25, 2026",103,117405.0,0.69,0.54,14,0,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260387,Meenakshi Nair,97176-80097,Female,Muslim,General,Hyderabad,500015,en-IN,2026-09-27,6,48403.0,0.84,0.87,6,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260388,Rahul Iyer,99625-34747,Male,Hindu,OBC,Coimbatore,641001,ta-IN,2026-10-12,80,117756.0,0.2,0.55,36,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260389,Ritu Kumar,+91 97741 42818,Female,Muslim,SC,Pune,411046,en-IN,26/08/2026,10,633.0,0.43,0.34,32,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260390,Rahul Singh,+91 94160 86078,Male,Muslim,SC,Delhi,110021,hi-IN,"Aug 30, 2026",105,1074.0,0.62,0.41,0,0,father ICU me hai critical condition hai please abhi call mat karo,False,1
+TEST-20260391,Imran Gupta,919133434705,Male,Hindu,SC,Jaipur,302046,hi-IN,"Sep 23, 2026",97,543.0,0.41,0.71,20,0,Follow up required,False,0
+TEST-20260392,Mohammad Gowda,9165156547,Male,Hindu,OBC,Lucknow,226051,hi-IN,"Sep 29, 2026",59,110838.0,0.94,0.46,11,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260393,Aarti Sharma,919587622155,Female,Hindu,SC,Coimbatore,641072,ta-IN,"Oct 07, 2026",4,668.0,0.73,0.83,28,2,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260394,Karthik Patel,919569945176,Male,Christian,OBC,Coimbatore,641071,ta-IN,09-11-2026,85,22722.0,0.41,0.8,12,0,,False,1
+TEST-20260395,Kavya Chavan,919640613202,Female,Hindu,General,Delhi,110043,hi-IN,14-09-2026,18,10499.0,0.58,0.77,21,1,kal pakka pay kar dunga guarantee,False,1
+TEST-20260396,Deepa Joshi,+91 93986 50223,Female,Hindu,OBC,Coimbatore,641078,ta-IN,"Aug 24, 2026",8,112977.0,0.64,0.33,32,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260397,Deepak Kaur,91665 99058,Male,Hindu,OBC,Delhi,110023,hi-IN,2026-09-24,105,131581.0,0.75,0.72,11,3,gharme shaadi chal rahi hai agle hafte call karna,False,1
+TEST-20260398,Sunita Kaur,+91 97398 59817,Female,Hindu,OBC,Mysuru,570028,kn-IN,2026-11-15,88,102566.0,0.38,0.23,1,0,kodolla tumba extra interest haktidira,False,0
+TEST-20260399,Amit Mukherjee,9404231176,Male,Sikh,General,Pune,411023,en-IN,08/08/2026,41,1667.0,0.3,0.36,23,2,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260400,Amit Bose,+91 94095 26001,Male,Hindu,SC,Delhi,110061,hi-IN,"Sep 29, 2026",11,2822.0,0.41,0.78,44,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260401,Sunita Patel,96134 34942,Female,Hindu,OBC,Chennai,600061,ta-IN,"Oct 15, 2026",23,2786.0,0.66,0.72,45,2,pay panna mudiyathu wrongful charges,False,1
+TEST-20260402,Karthik Chavan,+91 97529 08359,Male,Hindu,OBC,Lucknow,226024,hi-IN,06-10-2026,3,2402.0,0.62,0.19,10,0,two days me clear karta hu,False,1
+TEST-20260403,Rajesh Pandey,9434526437,Male,Hindu,SC,Pune,411013,en-IN,2026-08-19,37,44319.0,0.18,0.26,27,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260404,Geeta Ahmed,95746-81140,Female,Hindu,General,Pune,411050,en-IN,05-10-2026,5,105011.0,0.28,0.64,30,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260405,Arun Jain,919269794008,Male,Hindu,OBC,Hyderabad,500056,en-IN,2026-10-10,15,5588.0,0.84,0.57,21,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260406,Ramesh Deshmukh,9472980621,Male,Hindu,SC,Chennai,600010,ta-IN,"Aug 20, 2026",56,11203.0,0.41,0.29,12,0,Promised to pay tomorrow,False,1
+TEST-20260407,Geeta Mehta,97557-30601,Female,Hindu,General,Jaipur,302008,hi-IN,"Aug 10, 2026",66,58119.0,0.67,0.78,35,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260408,Mohammad Yadav,93582-65598,Male,Hindu,OBC,Jaipur,302053,hi-IN,"Aug 03, 2026",74,27350.0,0.58,0.72,17,0,fraud call hai dispute raise kiya hai maine,False,1
+TEST-20260409,Amit Das,9653687497,Male,Sikh,OBC,Hubballi,580066,kn-IN,03/08/2026,94,77355.0,0.62,0.86,11,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260410,Chitra Joshi,9850024982,Female,Hindu,General,Jaipur,302034,hi-IN,10/11/2026,94,2082.0,0.79,0.71,12,0,father ICU me hai critical condition hai please abhi call mat karo,True,0
+TEST-20260411,Kavitha Khan,919384361450,Female,Hindu,General,Hyderabad,500045,en-IN,07/10/2026,94,1509.0,0.77,0.31,40,1,Promised to pay tomorrow,False,1
+TEST-20260412,Arun Yadav,94092 18012,Male,Hindu,General,Bengaluru,560059,kn-IN,08/10/2026,7,4587.0,0.44,0.88,28,0,sambala 5th baratte aaga full pay madtini,False,1
+TEST-20260413,Ramesh Patel,919458455729,Male,Hindu,OBC,Lucknow,226062,hi-IN,15-08-2026,81,2324.0,0.94,0.31,34,4,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260414,Shalini Gowda,919755872186,Female,Hindu,ST,Mumbai,400047,en-IN,08/10/2026,53,129736.0,0.57,0.18,16,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260415,Deepa Verma,95532 84457,Female,Hindu,General,Chennai,600015,ta-IN,2026-11-19,102,2414.0,0.58,0.92,23,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260416,Swati Mehta,+91 95969 61795,Female,Hindu,General,Jaipur,302025,hi-IN,24-09-2026,61,613.0,0.58,0.48,3,0,gharme shaadi chal rahi hai agle hafte call karna,False,0
+TEST-20260417,Venkatesh Joshi,93490 32593,Male,Hindu,OBC,Hyderabad,500042,en-IN,2026-08-29,7,2413.0,0.79,0.25,1,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260418,Rajesh Reddy,919300648282,Male,Hindu,OBC,Hyderabad,500039,en-IN,26-10-2026,76,87012.0,0.36,0.54,31,4,"Facing temporary liquidity shortage, please send partial settlement link",False,0
+TEST-20260419,Naveen Gowda,919933046910,Male,Hindu,OBC,Hubballi,580073,kn-IN,12-08-2026,21,10507.0,0.18,0.35,32,0,Follow up required,False,1
+TEST-20260420,Geeta Patel,9104755437,Female,Christian,SC,Hubballi,580094,kn-IN,10-10-2026,38,622.0,0.22,0.72,20,4,naale kanditha kodtini,False,1
+TEST-20260421,Ajay Verma,99889 58661,Male,Hindu,OBC,Coimbatore,641050,ta-IN,2026-08-23,64,59017.0,0.61,0.91,45,1,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260422,Lakshmi Joshi,91277 04626,Female,Hindu,General,Hyderabad,500013,en-IN,11-11-2026,44,818.0,0.32,0.66,12,0,"Disputing penal interest charges, will not pay until rectified",False,0
+TEST-20260423,Aarti Joshi,99935 22373,Female,Hindu,General,Bengaluru,560067,kn-IN,10-09-2026,28,29202.0,0.89,0.17,29,1,Promised to pay tomorrow,False,1
+TEST-20260424,Neha Singh,+91 95911 26344,Female,Hindu,OBC,Chennai,600025,ta-IN,2026-11-05,24,3730.0,0.44,0.22,41,2,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260425,Vikram Nair,9333789757,Male,Hindu,General,Hubballi,580052,kn-IN,16-08-2026,74,35501.0,0.67,0.17,12,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260426,Arun Patel,95079 45592,Male,Hindu,SC,Hubballi,580065,kn-IN,10/09/2026,70,49032.0,0.81,0.71,37,0,salary 7th barutte nodi kanditha pay madtini,False,1
+TEST-20260427,Pooja Kumar,98382-87035,Female,Hindu,OBC,Hyderabad,500060,en-IN,2026-10-18,60,1464.0,0.63,0.92,31,1,Follow up required,False,1
+TEST-20260428,Meenakshi Gowda,919953569828,Female,Hindu,General,Coimbatore,641041,ta-IN,13/10/2026,52,2589.0,0.56,0.85,37,0,branch la already cash pay panniyachu check pannunga,True,0
+TEST-20260429,Vijay Khan,95966 94190,Male,Hindu,General,Lucknow,226046,hi-IN,12-11-2026,88,96280.0,0.52,0.65,34,0,salary 5th ko aayega tab pay kar dunga,False,1
+TEST-20260430,Venkatesh Jain,9481104878,Male,Hindu,General,Hubballi,580043,kn-IN,14-10-2026,52,11870.0,0.46,0.48,4,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260431,Ramesh Das,9623174068,Male,Hindu,OBC,Coimbatore,641024,ta-IN,29-08-2026,58,39867.0,0.8,0.45,20,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260432,Preeti Iyer,919529233291,Female,Hindu,OBC,Coimbatore,641004,ta-IN,07-11-2026,18,50472.0,0.44,0.38,19,0,naalaiki kandippa pay panren,False,1
+TEST-20260433,Amina Patel,+91 95721 79393,Female,Muslim,SC,Hubballi,580025,kn-IN,17/09/2026,63,3544.0,0.49,0.4,16,2,salary 7th barutte nodi kanditha pay madtini,True,1
+TEST-20260434,Sanjay Gowda,+91 91241 81247,Male,Hindu,SC,Bengaluru,560063,kn-IN,11-08-2026,13,7875.0,0.75,0.76,14,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260435,Sunita Ahmed,9316925469,Female,Hindu,ST,Bengaluru,560067,kn-IN,31/10/2026,27,139158.0,0.33,0.87,39,1,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260436,Ali Yadav,9941318781,Male,Christian,General,Pune,411058,en-IN,2026-09-19,29,60879.0,0.9,0.63,15,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260437,Priya Patel,96626 15586,Female,Hindu,General,Coimbatore,641029,ta-IN,22/08/2026,67,2218.0,0.87,0.69,30,0,branch la already cash pay panniyachu check pannunga,False,0
+TEST-20260438,Swati Das,9322300875,Female,Muslim,General,Chennai,600017,ta-IN,2026-11-05,80,1341.0,0.7,0.89,24,3,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260439,Suresh Bose,+91 95539 32751,Male,Hindu,General,Hubballi,580044,kn-IN,06/09/2026,80,116457.0,0.51,0.16,18,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260440,Anand Joshi,9927912608,Male,Hindu,General,Lucknow,226051,hi-IN,"Nov 09, 2026",79,6992.0,0.56,0.71,17,1,"Family medical emergency, admitted in hospital, please hold calls",True,0
+TEST-20260441,Zoya Iyer,99211-56395,Female,Hindu,General,Hubballi,580084,kn-IN,10/09/2026,41,5307.0,0.46,0.36,12,2,Promised to pay tomorrow,False,1
+TEST-20260442,Shalini Bose,97238-85542,Female,Hindu,General,Mumbai,400026,en-IN,2026-09-09,51,131872.0,0.11,0.69,25,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260443,Sunita Reddy,92761 01976,Female,Hindu,OBC,Mysuru,570037,kn-IN,12-11-2026,84,104340.0,0.44,0.83,12,0,branch nalli duddu kottidini receipt ide,False,0
+TEST-20260444,Neha Das,9513563261,Female,Hindu,SC,Coimbatore,641049,ta-IN,04/09/2026,63,1496.0,0.37,0.4,3,0,"Salary expected on 8th, will clear full EMI then",False,0
+TEST-20260445,Sunita Mishra,92220 83905,Female,Muslim,OBC,Chennai,600019,ta-IN,"Oct 12, 2026",41,138733.0,0.69,0.39,10,0,enaku salary 10th varum appo pay pannidren,True,1
+TEST-20260446,Rohan Gowda,95516-62783,Male,Hindu,General,Madurai,625043,ta-IN,14-10-2026,93,10792.0,0.1,0.94,23,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260447,Chitra Ahmed,91996 04636,Female,Hindu,OBC,Hubballi,580047,kn-IN,13/09/2026,87,34681.0,0.28,0.43,25,0,,False,1
+TEST-20260448,Chitra Gowda,+91 97948 60390,Female,Hindu,General,Bengaluru,560079,kn-IN,06-08-2026,34,38564.0,0.78,0.15,36,4,kodolla tumba extra interest haktidira,False,0
+TEST-20260449,Shalini Chavan,919105735862,Female,Muslim,ST,Mumbai,400035,en-IN,"Aug 22, 2026",89,47082.0,0.29,0.53,12,2,"Family medical emergency, admitted in hospital, please hold calls",True,0
+TEST-20260450,Ritu Singh,93006-30662,Female,Hindu,OBC,Jaipur,302071,hi-IN,2026-09-29,105,56463.0,0.83,0.24,38,1,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260451,Fatima Das,919903839581,Female,Hindu,OBC,Pune,411059,en-IN,18/09/2026,48,10071.0,0.89,0.71,21,2,Follow up required,False,1
+TEST-20260452,Ritu Sharma,919188769003,Female,Hindu,General,Chennai,600061,ta-IN,13/09/2026,64,3625.0,0.92,0.72,27,2,Follow up required,False,1
+TEST-20260453,Harpreet Mishra,9368602547,Male,Hindu,ST,Mumbai,400037,en-IN,18/10/2026,60,54091.0,0.76,0.19,37,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260454,Ajay Khan,+91 93956 63042,Male,Hindu,General,Hubballi,580081,kn-IN,09-08-2026,7,111424.0,0.49,0.84,14,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260455,Ali Jain,919287215594,Male,Sikh,ST,Lucknow,226013,hi-IN,"Oct 27, 2026",29,5273.0,0.15,0.88,23,0,fraud call hai dispute raise kiya hai maine,False,1
+TEST-20260456,Deepa Jain,+91 92848 52300,Female,Muslim,General,Mumbai,400005,en-IN,2026-09-15,59,70467.0,0.92,0.36,45,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260457,Ramesh Jain,9704824676,Male,Muslim,General,Chennai,600080,ta-IN,"Oct 05, 2026",70,96546.0,0.79,0.2,20,1,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260458,Naveen Singh,9688379966,Male,Muslim,ST,Coimbatore,641050,ta-IN,27/09/2026,1,10119.0,0.81,0.4,5,2,,False,1
+TEST-20260459,Aarti Chavan,919598448440,Female,Hindu,General,Madurai,625013,ta-IN,08-10-2026,63,8087.0,0.43,0.86,4,1,,True,1
+TEST-20260460,Karthik Verma,95248 89794,Male,Hindu,OBC,Mysuru,570064,kn-IN,14-10-2026,9,10718.0,0.19,0.38,34,3,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260461,Karthik Sharma,96106 15098,Male,Hindu,OBC,Bengaluru,560033,kn-IN,"Oct 26, 2026",75,1679.0,0.34,0.65,25,0,Promised to pay tomorrow,False,1
+TEST-20260462,Neha Verma,96153-59276,Female,Hindu,OBC,Delhi,110031,hi-IN,30-10-2026,28,2934.0,0.36,0.82,27,1,"Disputing penal interest charges, will not pay until rectified",True,1
+TEST-20260463,Sanjay Bose,97320 11303,Male,Hindu,OBC,Pune,411056,en-IN,27/08/2026,84,2662.0,0.41,0.38,34,2,"Facing temporary liquidity shortage, please send partial settlement link",False,0
+TEST-20260464,Neha Yadav,94437-12525,Female,Hindu,ST,Coimbatore,641037,ta-IN,29/09/2026,27,1814.0,0.51,0.54,25,2,Follow up required,False,1
+TEST-20260465,Karthik Mishra,+91 92134 73151,Male,Hindu,OBC,Delhi,110058,hi-IN,"Aug 21, 2026",14,6034.0,0.76,0.77,45,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260466,Kavitha Pandey,919330254935,Female,Hindu,OBC,Chennai,600021,ta-IN,2026-08-04,60,1881.0,0.58,0.37,30,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260467,Karthik Gupta,9286704005,Male,Hindu,General,Delhi,110078,hi-IN,17/11/2026,93,24386.0,0.88,0.36,25,1,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260468,Swati Nair,92767-11779,Female,Hindu,General,Hubballi,580040,kn-IN,2026-08-31,6,116722.0,0.28,0.35,11,1,Promised to pay tomorrow,True,1
+TEST-20260469,Priya Sharma,95277-38730,Female,Muslim,SC,Madurai,625016,ta-IN,"Nov 20, 2026",23,130332.0,0.54,0.29,37,1,naalaiki kandippa pay panren,False,1
+TEST-20260470,Ali Patel,94925-70167,Male,Muslim,OBC,Lucknow,226050,hi-IN,20/09/2026,69,68552.0,0.92,0.4,10,0,10 tarik ko salary aate hi link pe bhar dunga,False,1
+TEST-20260471,Deepak Joshi,919447318582,Male,Hindu,OBC,Bengaluru,560081,kn-IN,2026-09-08,37,32590.0,0.84,0.2,29,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260472,Aditya Mishra,+91 94367 44293,Male,Hindu,OBC,Bengaluru,560051,kn-IN,27/09/2026,27,1422.0,0.27,0.12,25,1,kodolla tumba extra interest haktidira,False,1
+TEST-20260473,Amit Kaur,+91 92665 86486,Male,Hindu,OBC,Jaipur,302040,hi-IN,01/11/2026,76,76329.0,0.85,0.86,34,4,,False,1
+TEST-20260474,Rahul Khan,919772724047,Male,Hindu,OBC,Chennai,600058,ta-IN,09-10-2026,67,52440.0,0.37,0.88,19,0,konjam kashtam sir half amount pay panren link anupunga,False,1
+TEST-20260475,Anand Singh,919824708087,Male,Muslim,SC,Jaipur,302044,hi-IN,"Oct 26, 2026",52,13402.0,0.12,0.29,6,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260476,Manish Kaur,+91 95735 17457,Male,Hindu,ST,Pune,411025,en-IN,2026-10-31,42,2833.0,0.21,0.53,23,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260477,Meenakshi Bose,+91 92655 96294,Female,Hindu,OBC,Pune,411034,en-IN,04-08-2026,23,13067.0,0.6,0.18,40,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260478,Harpreet Verma,93393 79138,Male,Hindu,OBC,Hyderabad,500032,en-IN,18-11-2026,22,11579.0,0.72,0.53,21,0,Follow up required,False,1
+TEST-20260479,Gurpreet Bose,919531070790,Male,Hindu,SC,Hyderabad,500047,en-IN,16-09-2026,50,8741.0,0.88,0.65,41,0,Promised to pay tomorrow,False,1
+TEST-20260480,Geeta Deshmukh,919174980950,Female,Hindu,General,Delhi,110071,hi-IN,2026-08-10,35,23598.0,0.78,0.62,14,4,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260481,Rajesh Reddy,9755446204,Male,Muslim,SC,Jaipur,302033,hi-IN,2026-11-15,49,13351.0,0.9,0.84,37,1,nahi dunga galat charges lagaye hai,False,0
+TEST-20260482,Prashant Joshi,92675 90873,Male,Jain,General,Hyderabad,500055,en-IN,28/10/2026,82,56442.0,0.72,0.86,21,0,"Disputing penal interest charges, will not pay until rectified",True,1
+TEST-20260483,Aarti Pandey,98610-99104,Female,Hindu,SC,Coimbatore,641058,ta-IN,22-08-2026,12,114087.0,0.57,0.37,9,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260484,Karthik Chavan,95826-47797,Male,Hindu,OBC,Bengaluru,560039,kn-IN,"Sep 24, 2026",103,2716.0,0.53,0.7,33,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260485,Amit Gupta,919301119803,Male,Hindu,OBC,Mumbai,400007,en-IN,11-08-2026,43,68816.0,0.21,0.64,22,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260486,Swati Das,95163-78133,Female,Hindu,OBC,Mumbai,400013,en-IN,2026-08-16,17,2074.0,0.26,0.36,44,1,Follow up required,False,1
+TEST-20260487,Aditya Kumar,94161 10461,Male,Hindu,ST,Pune,411038,en-IN,"Oct 09, 2026",75,50078.0,0.17,0.7,10,1,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260488,Chitra Jain,9354442748,Female,Muslim,OBC,Mysuru,570016,kn-IN,08-11-2026,37,22527.0,0.55,0.89,27,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260489,Mohammad Reddy,91579-34721,Male,Sikh,OBC,Jaipur,302076,hi-IN,11/10/2026,59,1425.0,0.38,0.76,6,0,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260490,Swati Patel,97023-04949,Female,Hindu,SC,Madurai,625050,ta-IN,"Aug 16, 2026",39,33498.0,0.72,0.81,5,1,pay panna mudiyathu wrongful charges,False,1
+TEST-20260491,Simran Khan,+91 94604 62884,Female,Hindu,OBC,Hubballi,580057,kn-IN,07/10/2026,59,30459.0,0.46,0.81,41,1,Follow up required,False,1
+TEST-20260492,Ritu Iyer,9874934476,Female,Hindu,ST,Hubballi,580045,kn-IN,2026-10-06,87,123600.0,0.86,0.77,19,3,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260493,Meenakshi Mehta,919935332221,Female,Hindu,General,Bengaluru,560025,kn-IN,"Nov 16, 2026",51,122319.0,0.68,0.77,35,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260494,Vikram Kaur,+91 92839 87909,Male,Hindu,SC,Bengaluru,560063,kn-IN,06-08-2026,44,36532.0,0.55,0.78,18,2,kodolla tumba extra interest haktidira,False,1
+TEST-20260495,Meenakshi Mehta,919314734307,Female,Hindu,SC,Coimbatore,641030,ta-IN,"Oct 27, 2026",19,1595.0,0.8,0.91,1,1,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260496,Ajay Pandey,919305195910,Male,Hindu,OBC,Coimbatore,641060,ta-IN,28/10/2026,8,28105.0,0.34,0.11,16,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260497,Gurpreet Verma,98269-80245,Male,Hindu,ST,Chennai,600008,ta-IN,28/08/2026,97,711.0,0.67,0.47,30,1,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260498,Aarti Gowda,9285549357,Female,Hindu,SC,Delhi,110024,hi-IN,15/08/2026,52,103893.0,0.39,0.81,2,3,,False,1
+TEST-20260499,Vikram Joshi,+91 92398 78863,Male,Muslim,OBC,Pune,411003,en-IN,2026-08-03,21,26279.0,0.17,0.19,26,0,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260500,Ajay Nair,99554 80217,Male,Hindu,ST,Jaipur,302012,hi-IN,10-10-2026,5,12089.0,0.14,0.38,45,1,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260501,Preeti Jain,9765408131,Female,Sikh,OBC,Bengaluru,560075,kn-IN,22/09/2026,97,15126.0,0.39,0.76,18,0,swalpa duddu ide half pay madtini link kalsi,True,1
+TEST-20260502,Karthik Gowda,99211 59579,Male,Hindu,OBC,Coimbatore,641025,ta-IN,06/11/2026,34,24525.0,0.6,0.94,23,2,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260503,Simran Joshi,9426263352,Female,Hindu,General,Hyderabad,500032,en-IN,"Oct 29, 2026",76,10507.0,0.37,0.58,14,0,,False,1
+TEST-20260504,Manish Chavan,91892-40891,Male,Hindu,SC,Chennai,600053,ta-IN,"Oct 22, 2026",99,41772.0,0.64,0.27,27,2,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260505,Deepa Mehta,91182 65082,Female,Christian,General,Hyderabad,500026,en-IN,2026-10-26,11,1447.0,0.41,0.14,7,0,Promised to pay tomorrow,False,1
+TEST-20260506,Zoya Jain,96136 80542,Female,Hindu,ST,Mysuru,570068,kn-IN,01-11-2026,92,17100.0,0.43,0.75,34,0,salary 7th barutte nodi kanditha pay madtini,False,0
+TEST-20260507,Naveen Das,+91 94889 64174,Male,Hindu,General,Coimbatore,641076,ta-IN,"Aug 03, 2026",77,11461.0,0.5,0.16,17,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260508,Priya Das,919687168053,Female,Hindu,OBC,Mumbai,400039,en-IN,11-10-2026,25,111775.0,0.17,0.57,6,2,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260509,Rahul Bose,96836-03108,Male,Hindu,SC,Chennai,600041,ta-IN,14/08/2026,10,71471.0,0.81,0.81,36,1,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260510,Rahul Ahmed,98763-63660,Male,Hindu,General,Hubballi,580067,kn-IN,03-08-2026,15,52965.0,0.78,0.63,5,1,branch nalli duddu kottidini receipt ide,False,1
+TEST-20260511,Preeti Khan,94593-05041,Female,Hindu,ST,Lucknow,226025,hi-IN,29/10/2026,23,4832.0,0.82,0.27,44,2,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260512,Shalini Gupta,+91 91476 09395,Female,Hindu,ST,Pune,411012,en-IN,2026-08-16,99,512.0,0.67,0.67,42,0,Follow up required,False,1
+TEST-20260513,Divya Mukherjee,93681-66846,Female,Hindu,General,Mumbai,400068,en-IN,"Oct 14, 2026",10,1204.0,0.27,0.89,31,0,,False,1
+TEST-20260514,Ritu Deshmukh,919529327109,Female,Hindu,OBC,Madurai,625049,ta-IN,"Aug 23, 2026",51,28096.0,0.87,0.22,17,0,hospital la admit aagi irukken surgery mudinjathum pesuren,False,1
+TEST-20260515,Naveen Gupta,+91 99013 16589,Male,Hindu,OBC,Madurai,625054,ta-IN,"Aug 13, 2026",15,39208.0,0.74,0.3,43,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260516,Simran Chavan,+91 95378 49975,Female,Hindu,OBC,Mumbai,400076,en-IN,19/10/2026,104,98360.0,0.64,0.27,17,1,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260517,Divya Chavan,91074 77451,Female,Hindu,General,Jaipur,302062,hi-IN,2026-09-20,68,3998.0,0.77,0.79,9,1,branch mein de diya cash receipt hai mere paas,False,0
+TEST-20260518,Meenakshi Yadav,98955-86761,Female,Hindu,General,Hubballi,580031,kn-IN,18/10/2026,7,60228.0,0.78,0.47,34,2,kodolla tumba extra interest haktidira,False,1
+TEST-20260519,Meenakshi Pandey,919101574143,Female,Hindu,OBC,Bengaluru,560013,kn-IN,04/10/2026,8,122923.0,0.79,0.81,12,1,Follow up required,False,1
+TEST-20260520,Chitra Joshi,919854908473,Female,Hindu,OBC,Coimbatore,641019,ta-IN,20-10-2026,5,12323.0,0.26,0.76,37,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260521,Venkatesh Nair,9124036260,Male,Muslim,ST,Bengaluru,560052,kn-IN,"Aug 07, 2026",20,863.0,0.54,0.77,45,1,naale kanditha kodtini,False,1
+TEST-20260522,Manish Nair,98044-01904,Male,Hindu,SC,Chennai,600065,ta-IN,2026-10-08,51,642.0,0.62,0.46,44,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260523,Gurpreet Mehta,99912 94315,Male,Hindu,OBC,Chennai,600052,ta-IN,2026-09-19,42,7749.0,0.49,0.27,0,0,hospital la admit aagi irukken surgery mudinjathum pesuren,False,1
+TEST-20260524,Sanjay Iyer,9707106785,Male,Christian,OBC,Mysuru,570042,kn-IN,23/09/2026,56,2233.0,0.22,0.81,24,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260525,Divya Gupta,+91 99587 55999,Female,Hindu,OBC,Coimbatore,641048,ta-IN,18/11/2026,65,1032.0,0.17,0.6,43,0,enaku salary 10th varum appo pay pannidren,False,1
+TEST-20260526,Manish Bose,919622669080,Male,Hindu,SC,Mysuru,570047,kn-IN,02-10-2026,21,28590.0,0.73,0.28,19,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260527,Vijay Yadav,99209 53195,Male,Hindu,General,Bengaluru,560052,kn-IN,"Aug 22, 2026",10,31408.0,0.36,0.9,39,2,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260528,Imran Iyer,+91 94816 48170,Male,Muslim,SC,Hyderabad,500063,en-IN,2026-11-16,50,123968.0,0.69,0.19,10,3,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260529,Rohan Verma,99358-46349,Male,Hindu,OBC,Bengaluru,560016,kn-IN,"Nov 07, 2026",35,2014.0,0.92,0.91,4,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260530,Rajesh Yadav,919806420553,Male,Hindu,OBC,Madurai,625004,ta-IN,10/08/2026,62,2730.0,0.59,0.22,23,1,pay panna mudiyathu wrongful charges,False,0
+TEST-20260531,Deepak Kumar,9397026026,Male,Hindu,General,Chennai,600021,ta-IN,2026-08-18,58,14224.0,0.54,0.48,45,4,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260532,Lakshmi Sharma,94671-93179,Female,Hindu,ST,Coimbatore,641042,ta-IN,"Oct 19, 2026",26,3343.0,0.67,0.57,1,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260533,Neha Singh,9421113202,Female,Hindu,OBC,Mysuru,570025,kn-IN,16/08/2026,91,88864.0,0.79,0.13,7,2,hospital nalli iddini surgery aagide please thoda time bidi,False,0
+TEST-20260534,Kavitha Gowda,919403704731,Female,Hindu,OBC,Delhi,110054,hi-IN,2026-09-03,28,19613.0,0.15,0.25,17,2,already branch counter pe jama kar diya tha check karo,True,0
+TEST-20260535,Fatima Patel,96806-93273,Female,Hindu,General,Mumbai,400042,en-IN,15-11-2026,23,84133.0,0.25,0.37,20,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260536,Swati Bose,94540-30291,Female,Hindu,General,Pune,411044,en-IN,2026-08-04,81,94491.0,0.87,0.91,33,0,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260537,Lakshmi Reddy,91723 31711,Female,Hindu,OBC,Delhi,110012,hi-IN,23-10-2026,29,2593.0,0.55,0.51,41,0,father ICU me hai critical condition hai please abhi call mat karo,False,1
+TEST-20260538,Venkatesh Gupta,919438704291,Male,Hindu,OBC,Mumbai,400042,en-IN,2026-09-03,58,55670.0,0.25,0.47,0,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260539,Vijay Jain,94334-37704,Male,Hindu,OBC,Mumbai,400051,en-IN,18-08-2026,67,13058.0,0.67,0.52,34,0,"Salary expected on 8th, will clear full EMI then",True,1
+TEST-20260540,Mohammad Sharma,95257 02414,Male,Hindu,OBC,Hyderabad,500021,en-IN,31/08/2026,51,39322.0,0.85,0.25,4,4,Promised to pay tomorrow,False,0
+TEST-20260541,Harpreet Gowda,+91 94885 75559,Male,Hindu,OBC,Hyderabad,500048,en-IN,15/09/2026,33,17907.0,0.14,0.24,15,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260542,Neha Deshmukh,91821 01528,Female,Sikh,General,Hubballi,580081,kn-IN,"Aug 03, 2026",59,2753.0,0.69,0.76,4,0,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260543,Arun Verma,9237359570,Male,Hindu,ST,Mumbai,400025,en-IN,2026-08-24,17,86924.0,0.87,0.44,33,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,1
+TEST-20260544,Chitra Pandey,+91 92103 08469,Female,Hindu,General,Hyderabad,500022,en-IN,23-10-2026,101,11845.0,0.29,0.12,12,1,,False,0
+TEST-20260545,Priya Mishra,93315-67308,Female,Hindu,General,Pune,411056,en-IN,2026-09-20,86,11145.0,0.76,0.1,42,4,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260546,Rajesh Joshi,95595-82741,Male,Sikh,ST,Hyderabad,500021,en-IN,16-08-2026,54,33658.0,0.27,0.56,23,2,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260547,Rohan Deshmukh,+91 93448 12974,Male,Hindu,General,Coimbatore,641061,ta-IN,20-10-2026,23,933.0,0.69,0.49,32,1,hospital la admit aagi irukken surgery mudinjathum pesuren,True,0
+TEST-20260548,Vikram Verma,93799-85975,Male,Hindu,SC,Hubballi,580079,kn-IN,16-11-2026,38,54481.0,0.49,0.42,11,0,kodolla tumba extra interest haktidira,False,1
+TEST-20260549,Imran Chavan,96852 55060,Male,Hindu,ST,Delhi,110014,hi-IN,20-09-2026,31,41828.0,0.25,0.76,17,2,salry 7th ko credit hogi pakka transfer kar dunga,False,1
+TEST-20260550,Shreya Nair,919702863710,Female,Hindu,OBC,Coimbatore,641032,ta-IN,2026-11-09,35,17774.0,0.55,0.71,17,1,,False,1
+TEST-20260551,Prashant Mehta,91566 10045,Male,Hindu,OBC,Hyderabad,500031,en-IN,14/09/2026,59,1060.0,0.6,0.47,32,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260552,Divya Deshmukh,919710640520,Female,Hindu,SC,Hyderabad,500033,en-IN,20/08/2026,6,108500.0,0.13,0.68,8,1,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260553,Aditya Yadav,+91 93947 02670,Male,Hindu,OBC,Jaipur,302075,hi-IN,16-08-2026,97,65511.0,0.7,0.3,1,1,10 tarik ko salary aate hi link pe bhar dunga,False,1
+TEST-20260554,Sunita Iyer,95341 52031,Female,Hindu,OBC,Hyderabad,500061,en-IN,03-09-2026,45,2387.0,0.23,0.13,34,0,Promised to pay tomorrow,True,1
+TEST-20260555,Simran Gupta,93415 77181,Female,Hindu,SC,Chennai,600037,ta-IN,"Aug 12, 2026",10,23193.0,0.49,0.14,30,1,,False,1
+TEST-20260556,Meenakshi Das,919870284652,Female,Muslim,General,Chennai,600073,ta-IN,24/09/2026,73,133098.0,0.31,0.84,41,0,pay panna mudiyathu wrongful charges,True,0
+TEST-20260557,Zoya Reddy,91236-37317,Female,Sikh,General,Mumbai,400028,en-IN,12-08-2026,70,23482.0,0.34,0.3,25,0,Follow up required,False,1
+TEST-20260558,Ramesh Ahmed,9348063505,Male,Hindu,ST,Delhi,110032,hi-IN,18/09/2026,61,104840.0,0.83,0.76,24,0,Promised to pay tomorrow,False,1
+TEST-20260559,Gurpreet Kaur,99690-71933,Male,Hindu,ST,Pune,411051,en-IN,2026-08-30,41,1439.0,0.29,0.95,1,1,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260560,Aditya Bose,94335 30464,Male,Hindu,General,Madurai,625063,ta-IN,23-10-2026,17,21206.0,0.8,0.69,11,1,pay panna mudiyathu wrongful charges,False,1
+TEST-20260561,Ananya Chavan,9904690404,Female,Hindu,OBC,Lucknow,226015,hi-IN,29-09-2026,68,13733.0,0.65,0.29,11,0,job change hua hai thoda financial issue hai partial payment link bhejo,False,1
+TEST-20260562,Chitra Jain,92865-93111,Female,Hindu,OBC,Coimbatore,641001,ta-IN,"Sep 13, 2026",43,2205.0,0.56,0.54,40,0,"Disputing penal interest charges, will not pay until rectified",False,0
+TEST-20260563,Mohammad Patel,919494912172,Male,Hindu,SC,Jaipur,302044,hi-IN,14/09/2026,104,57531.0,0.15,0.87,37,0,fraud call hai dispute raise kiya hai maine,False,0
+TEST-20260564,Vijay Sharma,919393727438,Male,Christian,General,Chennai,600080,ta-IN,14/10/2026,68,30300.0,0.58,0.39,38,0,"Already deposited at bank branch 2 days ago, check counter ledger",False,0
+TEST-20260565,Chitra Reddy,92960-64082,Female,Sikh,General,Lucknow,226046,hi-IN,20/08/2026,103,13468.0,0.86,0.67,30,2,Follow up required,False,1
+TEST-20260566,Sunita Khan,+91 98198 44632,Female,Hindu,OBC,Bengaluru,560015,kn-IN,2026-08-03,90,2191.0,0.15,0.23,15,1,"Facing temporary liquidity shortage, please send partial settlement link",False,0
+TEST-20260567,Priya Mishra,+91 99571 36871,Female,Hindu,SC,Pune,411051,en-IN,02-11-2026,15,1074.0,0.64,0.68,33,2,"Facing temporary liquidity shortage, please send partial settlement link",False,1
+TEST-20260568,Priya Bose,9179148546,Female,Hindu,SC,Madurai,625025,ta-IN,2026-11-01,89,1547.0,0.3,0.66,6,2,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260569,Gurpreet Pandey,93364 37455,Male,Muslim,SC,Chennai,600004,ta-IN,30-09-2026,66,8971.0,0.3,0.47,19,0,"Family medical emergency, admitted in hospital, please hold calls",False,0
+TEST-20260570,Mohammad Verma,94176 30717,Male,Hindu,SC,Bengaluru,560007,kn-IN,05/11/2026,50,53992.0,0.86,0.95,30,1,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260571,Gurpreet Bose,+91 99966 10848,Male,Hindu,OBC,Jaipur,302057,hi-IN,2026-08-26,35,19736.0,0.42,0.72,6,1,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260572,Pooja Chavan,9179084324,Female,Hindu,OBC,Lucknow,226014,hi-IN,"Nov 15, 2026",79,8823.0,0.83,0.65,34,0,Follow up required,False,1
+TEST-20260573,Anand Kumar,919721264032,Male,Hindu,SC,Lucknow,226056,hi-IN,19/10/2026,15,2459.0,0.72,0.42,9,4,abhi paise kam hai aadha abhi de sakta hu baki next month,False,1
+TEST-20260574,Rajesh Jain,919633028260,Male,Hindu,OBC,Chennai,600045,ta-IN,16-08-2026,100,2215.0,0.55,0.77,18,3,pay panna mudiyathu wrongful charges,False,0
+TEST-20260575,Deepa Das,919728736276,Female,Muslim,ST,Coimbatore,641005,ta-IN,04-09-2026,19,8956.0,0.46,0.86,26,0,branch la already cash pay panniyachu check pannunga,False,0
+TEST-20260576,Deepa Iyer,+91 96348 69714,Female,Hindu,OBC,Lucknow,226006,hi-IN,"Aug 31, 2026",69,61356.0,0.61,0.25,8,1,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260577,Manish Iyer,919585882652,Male,Hindu,SC,Delhi,110063,hi-IN,05/09/2026,101,1413.0,0.24,0.76,43,0,salary delay ho gayi hai kal shaam tak kar dunga,False,1
+TEST-20260578,Imran Nair,9873077803,Male,Hindu,OBC,Mumbai,400077,en-IN,2026-08-05,53,45784.0,0.13,0.77,30,0,Follow up required,False,1
+TEST-20260579,Chitra Kumar,9325563383,Female,Hindu,General,Madurai,625075,ta-IN,03-09-2026,17,2183.0,0.72,0.6,23,1,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260580,Rahul Verma,99787-31379,Male,Hindu,OBC,Jaipur,302003,hi-IN,25-10-2026,52,6677.0,0.74,0.77,34,0,"Family medical emergency, admitted in hospital, please hold calls",False,1
+TEST-20260581,Zoya Das,98366-68592,Female,Sikh,OBC,Lucknow,226019,hi-IN,12-10-2026,49,6614.0,0.25,0.48,18,3,father ICU me hai critical condition hai please abhi call mat karo,False,0
+TEST-20260582,Swati Pandey,92072-56814,Female,Hindu,SC,Mysuru,570020,kn-IN,05-08-2026,76,77505.0,0.22,0.29,17,4,sambala 5th baratte aaga full pay madtini,False,0
+TEST-20260583,Vikram Reddy,9501924831,Male,Hindu,General,Hubballi,580070,kn-IN,03-10-2026,99,124628.0,0.92,0.69,23,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260584,Divya Iyer,98674-21693,Female,Hindu,General,Mysuru,570012,kn-IN,"Sep 14, 2026",50,54676.0,0.78,0.7,27,1,Promised to pay tomorrow,True,1
+TEST-20260585,Ananya Mishra,+91 92809 89282,Female,Hindu,OBC,Lucknow,226058,hi-IN,"Oct 01, 2026",32,1670.0,0.8,0.52,14,2,salary 5th ko aayega tab pay kar dunga,False,1
+TEST-20260586,Manish Gowda,99979 01421,Male,Hindu,General,Chennai,600030,ta-IN,11-09-2026,24,43841.0,0.11,0.3,12,3,naalaiki kandippa pay panren,True,1
+TEST-20260587,Swati Joshi,96043 22103,Female,Muslim,General,Bengaluru,560033,kn-IN,09-08-2026,31,99533.0,0.15,0.49,35,0,Follow up required,False,1
+TEST-20260588,Aditya Singh,95514 64597,Male,Hindu,SC,Mysuru,570017,kn-IN,06-11-2026,6,113546.0,0.64,0.49,36,2,Promised to pay tomorrow,True,1
+TEST-20260589,Neha Khan,919645697204,Female,Hindu,General,Hubballi,580093,kn-IN,"Oct 03, 2026",13,36114.0,0.42,0.55,8,1,hospital nalli iddini surgery aagide please thoda time bidi,False,1
+TEST-20260590,Simran Deshmukh,98201 43474,Female,Hindu,OBC,Mumbai,400006,en-IN,2026-10-19,28,43799.0,0.23,0.79,15,1,"Disputing penal interest charges, will not pay until rectified",False,1
+TEST-20260591,Harpreet Sharma,9251591657,Male,Hindu,General,Coimbatore,641013,ta-IN,"Oct 14, 2026",39,7085.0,0.94,0.44,40,1,hospital la admit aagi irukken surgery mudinjathum pesuren,False,1
+TEST-20260592,Manish Sharma,919578904120,Male,Hindu,OBC,Jaipur,302001,hi-IN,"Aug 10, 2026",83,4626.0,0.49,0.33,38,0,"Salary expected on 8th, will clear full EMI then",False,1
+TEST-20260593,Meenakshi Kumar,9673171865,Female,Christian,SC,Hyderabad,500065,en-IN,"Aug 23, 2026",79,13402.0,0.31,0.72,23,0,,True,0
+TEST-20260594,Deepa Singh,9127905758,Female,Hindu,ST,Pune,411007,en-IN,04/09/2026,76,11652.0,0.13,0.4,1,1,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260595,Prashant Pandey,92999-36280,Male,Hindu,OBC,Coimbatore,641049,ta-IN,11/11/2026,22,4712.0,0.91,0.58,24,0,salary 5th varum sir appo kandippa pay panren,False,1
+TEST-20260596,Preeti Patel,98865 26602,Female,Muslim,General,Delhi,110017,hi-IN,20-10-2026,37,10099.0,0.15,0.19,11,0,,False,1
+TEST-20260597,Deepak Deshmukh,+91 91190 64658,Male,Hindu,OBC,Madurai,625006,ta-IN,22/09/2026,92,1480.0,0.56,0.65,1,1,Follow up required,False,0
+TEST-20260598,Lakshmi Mishra,+91 92185 47048,Female,Hindu,SC,Jaipur,302065,hi-IN,11/09/2026,100,7663.0,0.23,0.34,33,0,father ICU me hai critical condition hai please abhi call mat karo,False,0
+TEST-20260599,Venkatesh Chavan,9166861538,Male,Hindu,General,Madurai,625016,ta-IN,2026-11-05,99,8122.0,0.38,0.34,36,2,Will pay by 5th as soon as my salary is credited,False,1
+TEST-20260600,Kavitha Khan,97152-30462,Female,Hindu,General,Mysuru,570026,kn-IN,"Aug 25, 2026",63,44198.0,0.86,0.85,25,0,Will pay by 5th as soon as my salary is credited,False,1
