@@ -1,0 +1,19 @@
+{
+  "type": "PAYMENT_LINK_EVENT",
+  "event_time": "2026-11-21T13:50:00+05:30",
+  "data": {
+    "link": {
+      "link_id": "link_LN_20261211_1795248999",
+      "link_status": "PAID",
+      "link_currency": "INR",
+      "link_amount": 12500.00,
+      "link_amount_paid": 12500.00,
+      "link_partial_payments": false,
+      "customer_details": {
+        "customer_phone": "9876543210",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "borrower@example.com"
+      }
+    }
+  }
+}
