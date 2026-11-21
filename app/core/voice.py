@@ -14,17 +14,18 @@ from app.config import (
 )
 
 LANGUAGE_SPEAKERS = {
-    "hi-IN": "priya_hi_recovery",
-    "kn-IN": "chaitra_kn_conversation",
-    "ta-IN": "vijay_ta_narration",
-    "en-IN": "shubh_enhi_banking"
+    "hi-IN": "priya",
+    "kn-IN": "kavya",
+    "ta-IN": "vijay",
+    "en-IN": "shubh"
 }
 
-FALLBACK_SPEAKERS = {
-    "hi-IN": "aditya",
-    "kn-IN": "chaitra_kn_conversation",
-    "ta-IN": "vijay_ta_narration",
-    "en-IN": "aditya"
+VALID_BULBUL_SPEAKERS = {
+    "aditya", "ritu", "ashutosh", "priya", "neha", "rahul", "pooja", "rohan",
+    "simran", "kavya", "amit", "dev", "ishita", "shreya", "ratan", "varun",
+    "manan", "sumit", "roopa", "kabir", "aayan", "shubh", "advait", "anand",
+    "tanya", "tarun", "sunny", "mani", "gokul", "vijay", "shruti", "suhani",
+    "mohit", "kavitha", "rehan", "soham", "rupali"
 }
 
 def synthesize_speech(
@@ -33,11 +34,16 @@ def synthesize_speech(
     speaker: Optional[str] = None
 ) -> Dict[str, Any]:
     """Calls Sarvam Bulbul TTS and returns playable base64 WAV."""
-    chosen_speaker = speaker or LANGUAGE_SPEAKERS.get(language_code, "aditya")
+    candidate_speaker = speaker or LANGUAGE_SPEAKERS.get(language_code, "priya")
+    if candidate_speaker not in VALID_BULBUL_SPEAKERS:
+        candidate_speaker = LANGUAGE_SPEAKERS.get(language_code, "aditya")
+    if candidate_speaker not in VALID_BULBUL_SPEAKERS:
+        candidate_speaker = "aditya"
+
     payload = {
         "inputs": [text[:500]],
         "target_language_code": language_code,
-        "speaker": chosen_speaker,
+        "speaker": candidate_speaker,
         "pitch": 0,
         "pace": 1.0,
         "loudness": 1.5,
@@ -62,13 +68,13 @@ def synthesize_speech(
                     "success": True,
                     "audio_base64": audio_b64,
                     "audio_data_uri": f"data:audio/wav;base64,{audio_b64}" if audio_b64 else "",
-                    "speaker": chosen_speaker,
+                    "speaker": candidate_speaker,
                     "language": language_code
                 }
             else:
-                fallback_speaker = FALLBACK_SPEAKERS.get(language_code, "aditya")
-                if fallback_speaker != chosen_speaker:
-                    payload["speaker"] = fallback_speaker
+                # Universal fallback speaker: aditya
+                if candidate_speaker != "aditya":
+                    payload["speaker"] = "aditya"
                     res_retry = client.post(f"{SARVAM_BASE_URL}/text-to-speech", json=payload, headers=headers)
                     if res_retry.status_code == 200:
                         data = res_retry.json()
@@ -78,7 +84,7 @@ def synthesize_speech(
                             "success": True,
                             "audio_base64": audio_b64,
                             "audio_data_uri": f"data:audio/wav;base64,{audio_b64}",
-                            "speaker": fallback_speaker,
+                            "speaker": "aditya",
                             "language": language_code
                         }
                 return {

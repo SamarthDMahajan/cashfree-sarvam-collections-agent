@@ -23,10 +23,10 @@ from app.config import (
 from app.core.compliance import guard_tone_and_ethics
 
 LANGUAGE_SPEAKERS = {
-    "hi-IN": "priya_hi_recovery",
-    "kn-IN": "chaitra_kn_conversation",
-    "ta-IN": "vijay_ta_narration",
-    "en-IN": "shubh_enhi_banking"
+    "hi-IN": "priya",
+    "kn-IN": "kavya",
+    "ta-IN": "vijay",
+    "en-IN": "shubh"
 }
 
 def extract_signals_from_note(note: str) -> Dict[str, Any]:
